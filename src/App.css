@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mandali', sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.backGroundNeon{
+   
+    background-image: url("../src/assets/images/bg-neon.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.homeBase{
+    height: 100vh;
+    background-image: url("../src/assets/images/animegirlcyber.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.welcomePage{
+    min-height: 90vh;
+    background-size: cover;
+    background-color: #332702;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backgroundText{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+    width: 100vw;
+    font-size: 100px;
+    letter-spacing: 10px;
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: url("../src/assets/images/cybercitybg.jpg");
+    background-size: 150%;
+    animation: bg-animation 30s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
+    text-shadow: 1px 5px 90px rgb(187, 187, 187);
+}
+
+.backgroundText:hover{
+    font-size: 120px;
+    letter-spacing: 14px;
+    text-shadow: 1px 5px 50px rgb(120, 74, 74);
+    transition: 2.5s;
+
+}
+
+@keyframes bg-animation {
+    0%{background-position: 0% 0%;}
+    50%{background-position: 100% 100%;}
+    100%{background-position: 0% 0%;}
+}
+
+.logoRedshift{
+    width: 60px;
+    height: 60px;
+
+}
