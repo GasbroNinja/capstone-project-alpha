@@ -35,14 +35,7 @@ body {
     justify-content: center;
 }
 
-.settingTextNav {
-    background-size: cover;
-    background-color: #332702;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .backgroundText{
     font-family: 'Rubik', sans-serif;
@@ -58,6 +51,34 @@ body {
     background-size: 150%;
     animation: bg-animation 30s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
     text-shadow: 1px 5px 90px rgb(187, 187, 187);
+}
+
+
+.backgroundText:hover{
+    font-size: 90px;
+    letter-spacing: 12px;
+    text-shadow: 1px 5px 50px rgb(120, 74, 74);
+    transition: 2.5s;
+
+}
+
+@keyframes bg-animation {
+    0%{background-position: 0% 0%;}
+    50%{background-position: 100% 100%;}
+    100%{background-position: 0% 0%;}
+}
+
+/*-----NAV--------*/
+
+.logoRedshift{
+    width: 80px;
+    height: 80px;
+
+}
+
+.offcanvasStyle1{
+    background: transparent;
+
 }
 
 .backgroundTextNav {
@@ -80,26 +101,16 @@ body {
     font-size: 32px;
     letter-spacing: 3px;
     text-shadow: 1px 5px 50px rgb(120, 74, 74);
-    transition: 2.5s;
+    transition: 1s;
 
 }
 
-.backgroundText:hover{
-    font-size: 90px;
-    letter-spacing: 12px;
-    text-shadow: 1px 5px 50px rgb(120, 74, 74);
-    transition: 2.5s;
-
-}
-
-@keyframes bg-animation {
-    0%{background-position: 0% 0%;}
-    50%{background-position: 100% 100%;}
-    100%{background-position: 0% 0%;}
-}
-
-.logoRedshift{
-    width: 100px;
-    height: 100px;
-
+.settingTextNav {
+    
+    background-size: cover;
+    background-color: #332702;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

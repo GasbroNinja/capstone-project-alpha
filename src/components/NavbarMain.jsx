@@ -25,11 +25,11 @@ const NavbarMain = ({ ...props }) => {
         {...props}
       >
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title className="settingTextNav backgroundTextNav d-flex flex-column align-items-center ">
+          <Offcanvas.Title className="pt-5 my-5 settingTextNav backgroundTextNav d-flex flex-column align-items-center ">
             Redshift Gaming
           </Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body className="d-flex flex-column align-items-center justify-content-top">
+        <Offcanvas.Body className=" d-flex flex-column align-items-center justify-content-top">
           <Button
             variant="link"
             className="settingTextNav backgroundTextNav pb-5"
