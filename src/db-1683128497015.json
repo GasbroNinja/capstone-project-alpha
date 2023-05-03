@@ -1,0 +1,9 @@
+{
+    "posts" : [
+        { "id": 1, "title": "first post!!", "author": "Keizaki" }
+    ],
+    "comments" : [
+        { "id": 1, "body": "first comment!", "postId": 1 }
+    ],
+    "profile": {"name":"Keizaki"}
+}

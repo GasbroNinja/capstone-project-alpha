@@ -1,26 +1,23 @@
 import React from 'react'
 import "../App.css"
-import { Container } from 'react-bootstrap';
-import logoredshift from "../assets/images/logo-redshift.jpeg"
+import { Container, } from 'react-bootstrap';
+
+import NavbarMain from './NavbarMain';
 
 const Home = () => {
   return (
-    <Container fluid className="backGroundNeon">
+    <Container fluid className="backGroundNeon p-0">
       <Container fluid className="homeBase p-0">
         <Container
           fluid
-          className=" d-flex align-items-center justify-content-center"
+          className=" d-flex align-items-center justify-content-start p-3"
         >
-          <img
-            src={logoredshift}
-            alt="logo-redshift"
-            className="logoRedshift"
-          />
+          <NavbarMain />
+
         </Container>
         <div className="d-flex justify-content-center align-items-center overflow-hidden">
-          <h1 className="welcomePage backgroundText pb-5">HELLO GAMER</h1>
+          <h1 className="welcomePage backgroundText">HELLO GAMERS</h1>
         </div>
-
       </Container>
     </Container>
   );
