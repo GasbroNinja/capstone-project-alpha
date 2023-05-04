@@ -5,16 +5,19 @@ body {
 }
 
 
-* {
+*, *:before,
+*:after {
     box-sizing: border-box;
+    
 }
 
 .backGroundNeon{
     width: 100vw;
     height: 100vh;
-    background-image: url("../src/assets/images/mountains-planet-sunrise-surreal-foggy-5k-6000x3624-1154.jpg");
+    background-image: url("../src/assets/images/horizon.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 .homeBase{
@@ -41,13 +44,13 @@ body {
     font-family: 'Rubik', sans-serif;
     font-weight: 800;
     width: 100vw;
-    font-size: 72px;
-    letter-spacing: 10px;
+    font-size: 100px;
+    letter-spacing: 12px;
     color: transparent;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    background-image: url("../src/assets/images/mountains-planet-sunrise-surreal-foggy-5k-6000x3624-1154.jpg");
+    background-image: url("../src/assets/images/red-baron.jpg");
     background-size: 150%;
     animation: bg-animation 30s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
     text-shadow: 1px 5px 90px rgb(187, 187, 187);
@@ -55,8 +58,8 @@ body {
 
 
 .backgroundText:hover{
-    font-size: 90px;
-    letter-spacing: 12px;
+    font-size: 120px;
+    letter-spacing: 16px;
     text-shadow: 1px 5px 50px rgb(120, 74, 74);
     transition: 2.5s;
 
@@ -66,6 +69,21 @@ body {
     0%{background-position: 0% 0%;}
     50%{background-position: 100% 100%;}
     100%{background-position: 0% 0%;}
+}
+
+.boxToAnimate{
+    animation: text-animation1 5s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+@keyframes text-animation1{
+    0% {
+        box-shadow: 0px 10px 13px -7px #000000, 0px 15px 40px 7px #FF6A6A; }
+
+    50% {
+        box-shadow: 0px 10px 13px -7px #000000, 0px 15px 80px 7px #FF6A6A; }
+
+    100% {
+        box-shadow: 0px 10px 13px -7px #000000, 0px 15px 40px 7px #FF6A6A; }
 }
 
 /*-----NAV--------*/
@@ -81,10 +99,30 @@ body {
 
 }
 
+.btnNavOffcanv{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: url("../src/assets/images/bg-red-black-white.jpg");
+    background-size: 250%;
+    animation: bg-animation 5s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
+    text-shadow: 1px 5px 90px rgb(187, 187, 187);
+}
+
+.arrowbtnNavOffcanv{
+    color: rgb(229, 229, 229);
+    text-shadow: 5px 5px 90px rgb(208, 78, 78);
+}
+
 .backgroundTextNav {
     font-family: 'Rubik', sans-serif;
     font-weight: 800;
-    width: 100vw;
+    
     font-size: 16px;
     letter-spacing: 1.5px;
     color: transparent;
@@ -100,9 +138,16 @@ body {
 .backgroundTextNav:hover {
     font-size: 32px;
     letter-spacing: 3px;
-    text-shadow: 1px 5px 50px rgb(120, 74, 74);
+    text-shadow: 1px 5px 50px rgb(109, 65, 65);
     transition: 1s;
 
+}
+
+.textTitleNavOffcanv{
+    font-size: 32px;
+    letter-spacing: 3px;
+    text-shadow: 1px 5px 50px rgb(179, 173, 173);
+    transition: 1s;
 }
 
 .settingTextNav {
@@ -113,4 +158,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*------------  CARD LANDING PAGE  ---------------- */
+
+.cardLandingPage{
+    max-width: 800px;
+    max-height: 800px;
+}
+
+.cardImgLandingPage{
+    transform:scale(0.7);
+}
+
+.cardImgLandingPage:hover {
+    transition: 1s;
+    transform: scale(1);
 }
