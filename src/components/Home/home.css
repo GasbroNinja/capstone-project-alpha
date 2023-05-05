@@ -1,0 +1,31 @@
+/*----------------- HOME PAGE --------------------*/
+
+.fixImgCardHome {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50px;
+    display: hidden;
+    transform: scale(1) translateY(0px) translateX(0px);
+    animation: bg-animation2 5s 1 cubic-bezier(0.215, 0.610, 0.355, 1);
+    animation-iteration-count: 1
+}
+
+@keyframes bg-animation2{
+    0% {
+           display: block;
+            transform: scale(0.7) translateY(850px) translateX(850px)    }
+    
+        50% {
+            transform: scale(1.1) translateY(0px) translateX(200px)
+        }
+    
+        100% {
+            transform: scale(1) translateY(0px) translateX(0px)  }
+
+
+}
+
+.contentCard{
+    width: 100%;
+    padding-left: 280px;
+}

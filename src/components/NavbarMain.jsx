@@ -3,6 +3,7 @@ import { Button, Container, Offcanvas } from 'react-bootstrap';
 import { ImArrowDown } from "react-icons/im";
 import logoredshift from "../assets/images/LogoRedShift2023.png";
 import "../App.css"
+import { Link } from 'react-router-dom';
 
 
 const NavbarMain = ({ ...props }) => {
@@ -36,7 +37,9 @@ const NavbarMain = ({ ...props }) => {
         >
           <Offcanvas.Header className="d-flex justify-content-center">
             <Offcanvas.Title className="w-100 pt-5 my-5 settingTextNav backgroundTextNav textTitleNavOffcanv d-flex flex-column align-items-center justify-content-center ">
-              Redshift Gaming
+              <Link to={"/"} className="text-decoration-none">
+                Redshift Gaming
+              </Link>
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body className=" d-flex flex-column align-items-center justify-content-top">
@@ -44,34 +47,48 @@ const NavbarMain = ({ ...props }) => {
               variant="link"
               className="settingTextNav backgroundTextNav pb-5"
             >
-              Home
+              <Link to={"/home"} className="text-decoration-none">
+                Home
+              </Link>
             </Button>
 
             <Button
               variant="link"
               className="settingTextNav backgroundTextNav pb-5"
             >
-              Tesseramento
+              <Link to={"/tesseramento"} className="text-decoration-none">
+                Tesseramento
+              </Link>
             </Button>
 
             <Button
               variant="link"
               className="settingTextNav backgroundTextNav pb-5"
             >
-              Community
+              <Link to={"/community"} className="text-decoration-none">
+                Community
+              </Link>
             </Button>
 
             <Button
               variant="link"
               className="settingTextNav backgroundTextNav pb-5"
             >
-              Eventi
+              <Link to={"/events"} className="text-decoration-none">
+                Eventi
+              </Link>
             </Button>
           </Offcanvas.Body>
         </Offcanvas>
       </Container>
       <div className="d-flex justify-content-center">
-        <img src={logoredshift} alt="logo-redshift" className="logoRedshift" />
+        <Link to={"/"} className="text-decoration-none">
+          <img
+            src={logoredshift}
+            alt="logo-redshift"
+            className="logoRedshift"
+          />
+        </Link>
       </div>
     </>
   );
