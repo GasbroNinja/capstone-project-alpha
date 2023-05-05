@@ -22,8 +22,8 @@ const LandingPage = () => {
         </Container>
 
         <div className="d-flex flex-column justify-content-center align-items-center overflow-hidden">
-          <div className="welcomePage backgroundText py-2">
-            <div className="d-inline-flex flex-column justify-content-center my-3">
+          <div className="welcomePage backgroundText py-2 ">
+            <div className="d-inline-flex flex-column justify-content-center my-3 w-100">
               <h2 className="d-flex fst-italic d-flex justify-content-center">
                 WELCOME
               </h2>
@@ -56,8 +56,9 @@ const LandingPage = () => {
                         </Card.Text>
                       </Col>
                       <Col xs={12} sm={3} md={3} lg={3} xl={2}>
-                        <Card.Text className="text-light fw-semibold text-center pt-3">
-                          <strong className="pe-2 text-uppercase">
+                        <Card.Text className="text-light fw-semibold text-center pt-3 w-100
+                        ">
+                          <strong className="pe-2 text-uppercase ">
                             Oggi in sala
                           </strong>
                           &nbsp;&nbsp;
