@@ -13,10 +13,10 @@
 @keyframes bg-animation2{
     0% {
            display: block;
-            transform: scale(0.7) translateY(850px) translateX(850px)    }
+            transform: scale(0.7) translateY(850px) translateX(-850px)    }
     
         50% {
-            transform: scale(1.1) translateY(0px) translateX(200px)
+            transform: scale(1.1) translateY(0px) translateX(-200px)
         }
     
         100% {
@@ -27,5 +27,5 @@
 
 .contentCard{
     width: 100%;
-    padding-left: 280px;
+    padding-left: 290px;
 }

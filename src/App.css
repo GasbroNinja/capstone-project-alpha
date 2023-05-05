@@ -30,7 +30,7 @@ body {
 .welcomePage{
     min-height: 70%;
     background-size: cover;
-    background-color: #332702;
+    background-color: rgb(85, 0, 20);
     color: white;
     display: flex;
     align-items: center;
@@ -170,13 +170,26 @@ body {
 }
 
 .cardImgLandingPage{
-    transform:scale(0.7);
+    display: hidden;
+    transform:scale(1);
+    animation: cardAnimationLand 5s 1 cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
-.cardImgLandingPage:hover {
-    transition: 1s;
-    transform: scale(1);
+@keyframes cardAnimationLand{
+    0%{display: block;
+        transition: 1s;
+        transform: scale(0.1) translateY(850px) translateX(-850px) ;}
+    50%{transition: 0.5s;
+        transform: scale(0.7) translateY(0px) translateX(-300px);}
+    
+    75%{transition: 0.2s;
+        transform: scale(1.2) translateY(0px) translateX(-100px);}    
+
+    100%{transition: 1.5s;
+        transform: scale(1) translateY(0px) translateX(0px);}
 }
+
+
 
 .textCardBio{
     font-family: 'Rubik', sans-serif;

@@ -5,7 +5,7 @@ import "../Home/home.css"
 const CardHome = ({ dataHome }) => {
   return (
     <>
-      <Col className='p-0 px-2'>
+      <Col xs={12} xl={6} xxl={4} className='p-0 px-2'>
         <Card className="cardLandingPage bg-dark text-white my-4 mx-2  ">
           <Card.Img
             src={dataHome.img}
