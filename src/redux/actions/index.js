@@ -9,7 +9,7 @@ export const isPlayAction = song => ({ type: IS_PLAY, payload: song });
 
 export const getAlbumsAction = query => {
   return async dispatch => {
-    const baseEndpoint = "https://striveschool-api.herokuapp.com/api/deezer/search?q=";
+    const baseEndpoint = "search?q=";
     try {
       const response = await fetch(baseEndpoint + query);
       if (response.ok) {

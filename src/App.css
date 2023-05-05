@@ -12,8 +12,6 @@ body {
 }
 
 .backGroundNeon{
-    width: 100vw;
-    height: 100vh;
     background-image: url("../src/assets/images/horizon.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -25,6 +23,7 @@ body {
     background-image: url("../src/assets/images/horizon.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover ;
     
 }
 
@@ -89,9 +88,9 @@ body {
 /*-----NAV--------*/
 
 .logoRedshift{
-    width: 80px;
-    height: 80px;
-
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
 }
 
 .offcanvasStyle1{
@@ -165,6 +164,9 @@ body {
 .cardLandingPage{
     max-width: 800px;
     max-height: 800px;
+    box-shadow: 3px 3px 20px 0px rgb(47, 1, 1);
+    border-radius: 50px;
+    
 }
 
 .cardImgLandingPage{
@@ -175,3 +177,19 @@ body {
     transition: 1s;
     transform: scale(1);
 }
+
+.textCardBio{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: url("../src/assets/images/love-heart-hands-3840x3840-10774.jpg");
+    background-size: 180%;
+    animation: bg-animation 5s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
+    text-shadow: 1px 5px 90px rgb(187, 187, 187);
+}
+
