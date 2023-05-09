@@ -25,45 +25,48 @@ const LandingPage = () => {
           <div className="welcomePage backgroundText py-2 ">
             <div className="d-inline-flex flex-column justify-content-center my-3 w-100">
               <h2 className="d-flex fst-italic d-flex justify-content-center">
-                WELCOME
+                WELCOME REDDINI
               </h2>
-              <h1 className="d-flex fst-italic mb-5 d-flex justify-content-center">
-                REDDINI
-              </h1>
+              <span className="iconToTitleLand d-flex align-items-center justify-content-center">
+                <MdEmojiEvents />
+              </span>
               <h1 className="d-flex fst-italic d-flex justify-content-center">
                 EVENTO DEL GIORNO
               </h1>
             </div>
           </div>
-          <MdEmojiEvents />
+
           <Row xs={12} md={12} className="g-3">
             {Array.from({ length: 1 }).map((_, idx) => (
-              <Col key={idx}>
+              <Col className="m-0 p-0" key={idx}>
                 <Card className="cardLandingPage bg-transparent text-white my-3 mx-2">
-                  <Card.Img src={sfondoCard1} alt="Card image" />
+                  <Card.Img className='ImgResponsivenessLP' src={sfondoCard1} alt="Card image" />
                   <Row className="d-xs-flex flex-column">
-                    <Card.ImgOverlay className="cardImgLandingPage d-flex flex-column align-items-center justify-content-center">
+                    <Card.ImgOverlay className="p-0 cardImgLandingPage d-flex flex-column align-items-center justify-content-center">
                       <Col xs={12} sm={3} md={3} lg={4} xl={4}>
-                        <Card.Title className="btnNavOffcanv text-center fs-2 pb-1">
-                          Colpa delle Carte
+                        <Card.Title className="textCardLandingPage text-center fs-2 pb-1">
+                          Coppa Delle Casate
                         </Card.Title>
                       </Col>
                       <Col xs={12} sm={6} md={6} lg={5} xl={6}>
                         <Card.Text className="textCardBio text-light fw-semibold text-center pb-2">
-                          è un gioco di ruolo d'azione in cui i giocatori sono
-                          in grado di partecipare alle lezioni nella scuola di
-                          magia e stregoneria di Hogwarts.
+                          Nuovo evento tema Harry Potter, vieni anche tu giorno
+                          21 per partecipare ad una giornata all'insegna della
+                          saga di maghi più apprezzata di sempre, tra minigiochi
+                          ed altre sorprese vieni a divertirti insieme agli
+                          altri!
                         </Card.Text>
                       </Col>
                       <Col xs={12} sm={3} md={3} lg={3} xl={2}>
-                        <Card.Text className="text-light fw-semibold text-center pt-3 w-100
-                        ">
-                          <strong className="pe-2 text-uppercase ">
-                            Oggi in sala
+                        <Card.Text
+                          className="text-light fw-semibold text-center pt-3 w-100
+                        "
+                        >
+                          <strong className=" text-uppercase text-center ">
+                            Oggi in sala <br />
                           </strong>
-                          &nbsp;&nbsp;
-                          <small className="btnNavOffcanv fs-3 fw-bold fst-italic">
-                            alle 21:00
+                          <small className="textCardLandingPage fs-3 fw-bold text-center fst-italic">
+                            21:00
                           </small>
                         </Card.Text>
                       </Col>

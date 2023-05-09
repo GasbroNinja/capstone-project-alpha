@@ -3,7 +3,7 @@ import { Container, Row } from 'react-bootstrap';
 import NavbarMain from '../NavbarMain';
 import dataHome from '../Home/dataHome.json'
 import CardHome from './CardHome';
-import { MdEmojiEvents } from "react-icons/md";
+//import { MdEmojiEvents } from "react-icons/md";
 const LandingPage = () => {
   return (
     <Container fluid className="backGroundNeon p-0">
@@ -18,8 +18,8 @@ const LandingPage = () => {
           <div className="welcomePage backgroundText py-2">
             <div className="d-inline-flex flex-column justify-content-center my-2">
               <h2 className="d-flex fst-italic d-flex justify-content-center">
-                I REDDINI SONO CONNESSI{" "}
-                <MdEmojiEvents className="welcomePage d-flex align-items-center justify-content-center ms-2" />
+                I REDDINI SONO CONNESSI <br />
+                
               </h2>
             </div>
           </div>
