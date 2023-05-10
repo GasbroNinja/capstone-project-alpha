@@ -1,16 +1,17 @@
 /*----------------- HOME PAGE --------------------*/
 
-.homeBase {
-    height: 100vh;
-    background-image: url("../../assets/images/horizon.jpg");
-    background-position: center;
+.homeBase1 {
+    height: 100%;
+    background-image: url("../../assets/images/via-nicola-fabr-bg-red.png");
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
-.backGroundNeon {
-    background-image: url("../../assets/images/horizon.jpg");
+.backGroundNeon1 {
+    height: 100%;
+    background-image: url("../../assets/images/bg-redshift-editable.png");
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -18,23 +19,26 @@
 }
 
 .fixImgCardHome {
-    max-height: 300px;
+    
+    height: 500px;
+    max-width: 600px;
     object-fit: cover;
-    border-radius: 30px;
+    border-radius: 50px;
     display: hidden;
-    transform: scale(1) translateY(0px) translateX(0px);
+    transform: scale(0.9) translateY(0px) translateX(0px);
     animation: bg-animation2 5s  cubic-bezier(0.215, 0.610, 0.355, 1);
-    animation-iteration-count: 1
+    animation-iteration-count: 1;
+    
 }
 
 @media screen and (max-width: 576px) {
     .fixImgCardHome {
         height: 100%;
         object-fit: cover;
-        border-radius: 30px;
+        border-radius: 10px;
         display: hidden;
         transform: scale(1) translateY(0px) translateX(0px);
-        animation: bg-animation2 5s cubic-bezier(0.215, 0.610, 0.355, 1);
+        animation: bg-animation2 2s cubic-bezier(.46, .51, .86, .09);
         animation-iteration-count: 1
     }
 }
@@ -43,16 +47,16 @@
     0% {
             display: block;
             transition: 0.2s;
-            transform: scale(0.3) translateY(0px) translateX(-850px)    }
+            transform: scale(0.3)    }
     
         50% {
             transition: 0.3s;
-            transform: scale(0.8) translateY(0px) translateX(-200px)
+            transform: scale(0.8)
         }
     
         100% {
             transition: 0.5s;
-            transform: scale(1) translateY(0px) translateX(0px)  }
+            transform: scale(0.9) translateY(0px) translateX(0px)  }
 
 
 }

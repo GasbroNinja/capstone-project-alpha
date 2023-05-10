@@ -17,52 +17,35 @@
     "title": "Entrata Red",
     "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/57/da/d3/taverna-per-giochi-da.jpg?w=1200&h=-1&s=1",
     "bio": "lorem ipsum"
-  },
-  {
-    "id": "4",
-    "title": "Ingresso Red",
-    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/57/b7/5e/postazioni-pc-gaming.jpg?w=1200&h=1200&s=1",
-     "bio": "lorem ipsum"
-  },
-    {
-    "id": "5",
-    "title": "Pc Gaming ( torneo TFT )",
-    "img": "https://cdn-az.allevents.in/events5/banners/8e9bbb57b79f98669387cd546ac8e0a1f6110f4d6ecb2ab86dc7b0ea6359721b-rimg-w1200-h890-gmir.jpg?v=1681314193",
-    "bio": "lorem ipsum"
-  },
-  {
-    "id": "6",
-    "title": "Wii",
-    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/57/da/d3/taverna-per-giochi-da.jpg?w=1200&h=-1&s=1",
-     "bio": "lorem ipsum"
-  },
-    {
-    "id": "7",
-    "title": "Torneo Tekken",
-    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/57/b7/5e/postazioni-pc-gaming.jpg?w=1200&h=1200&s=1",
-    "bio": "lorem ipsum"
-  },
-  {
-    "id": "8",
-    "title": "Torneo Tekken in corso",
-    "img": "https://cdn-az.allevents.in/events5/banners/8e9bbb57b79f98669387cd546ac8e0a1f6110f4d6ecb2ab86dc7b0ea6359721b-rimg-w1200-h890-gmir.jpg?v=1681314193",
-     "bio": "lorem ipsum"
-  },
-  {
-    "id": "9",
-    "title": "Ingresso Red pt.3",
-    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/57/da/d3/taverna-per-giochi-da.jpg?w=1200&h=-1&s=1",
-    "bio": "lorem ipsum"
   }
   ],
   "comments": [
     {
       "id": 1,
-      "body": "some comment",
+      "avatar": "...",
+      "body": "La Sala è un posto per fare amicizie",
+      "data": "13-10-2022",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "avatar": "...",
+      "body": "La Sala è un posto per fare amicizie",
+      "data": "13-10-2022",
+      "postId": 1
+    },
+    {
+      "id": 3,
+      "avatar": "...",
+      "body": "La Sala è un posto per fare amicizie",
+      "data": "13-10-2022",
       "postId": 1
     }
   ],
-  "profile": {
-    "name": "Lorem"
+  "account": {
+    "username": "Gasbro",
+    "email": "gasbroider@live.it",
+    "password": "Cicciogamer89",
+    "id": "admin"
   }
 }

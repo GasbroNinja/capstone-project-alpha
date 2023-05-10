@@ -1,19 +1,19 @@
-import React from 'react'
-import { Card, Col, Row } from 'react-bootstrap';
-import "../Home/home.css"
+import React from "react";
+import { Card, Col, Row } from "react-bootstrap";
+import "../Home/home.css";
 
-const CardHome = ({ dataHome }) => {
+const CardHome2 = ({ dataHome2 }) => {
   return (
     <>
-      <Col xs={12} lg={6} xl={6} xxl={4} className="p-0 px-3">
+      <Col xs={12} lg={6} xl={6} xxl={4} className="p-0 px-2">
         <Card className="cardLandingPage bg-dark text-white my-4 mx-2  ">
           <Card.Img
-            src={dataHome.img}
-            alt="Redshift Sala"
+            src={dataHome2.img}
+            alt="Card image"
             className=" fixImgCardHome"
           />
           <Row className="d-xs-flex flex-column">
-            <Card.ImgOverlay className=" d-flex flex-column align-items-center justify-content-end border border-5 rounded-5 border-secondary">
+            <Card.ImgOverlay className=" d-flex flex-column align-items-center justify-content-end">
               <Col
                 xs={12}
                 sm={3}
@@ -22,8 +22,8 @@ const CardHome = ({ dataHome }) => {
                 xl={4}
                 className="text-end contentCard"
               >
-                <Card.Title className="text-end fw-bold fs-1 pb-1">
-                  {dataHome.title}
+                <Card.Title className="text-end fw-bold fs-2 pb-1">
+                  {dataHome2.title}
                 </Card.Title>
               </Col>
               <Col
@@ -35,7 +35,7 @@ const CardHome = ({ dataHome }) => {
                 className="text-end contentCard"
               >
                 <Card.Text className="text-light fw-semibold text-end pb-2">
-                  {dataHome.bio}
+                  {dataHome2.bio}
                 </Card.Text>
               </Col>
               <Col
@@ -47,7 +47,7 @@ const CardHome = ({ dataHome }) => {
                 className="text-end contentCard"
               >
                 <Card.Text className="text-light fw-semibold text-end pt-3">
-                  Reddini
+                  Socio
                 </Card.Text>
               </Col>
             </Card.ImgOverlay>
@@ -56,6 +56,6 @@ const CardHome = ({ dataHome }) => {
       </Col>
     </>
   );
-}
+};
 
-export default CardHome
+export default CardHome2;
