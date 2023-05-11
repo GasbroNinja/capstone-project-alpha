@@ -14,42 +14,44 @@ const CardHome = ({ dataHome }) => {
           />
           <Row className="d-xs-flex flex-column">
             <Card.ImgOverlay className=" d-flex flex-column align-items-center justify-content-end border border-5 rounded-5 border-secondary">
-              <Col
-                xs={12}
-                sm={3}
-                md={3}
-                lg={4}
-                xl={4}
-                className="text-end contentCard"
-              >
-                <Card.Title className="text-end fw-bold fs-1 pb-1">
-                  {dataHome.title}
-                </Card.Title>
-              </Col>
-              <Col
-                xs={12}
-                sm={6}
-                md={6}
-                lg={5}
-                xl={6}
-                className="text-end contentCard"
-              >
-                <Card.Text className="text-light fw-semibold text-end pb-2">
-                  {dataHome.bio}
-                </Card.Text>
-              </Col>
-              <Col
-                xs={12}
-                sm={3}
-                md={3}
-                lg={3}
-                xl={2}
-                className="text-end contentCard"
-              >
-                <Card.Text className="text-light fw-semibold text-end pt-3">
-                  Reddini
-                </Card.Text>
-              </Col>
+              <div className="contentCard">
+                <Col
+                  xs={12}
+                  sm={3}
+                  md={3}
+                  lg={4}
+                  xl={4}
+                  className="text-center w-100"
+                >
+                  <Card.Title className="text-center fw-bold fs-1 pb-1">
+                    {dataHome.title}
+                  </Card.Title>
+                </Col>
+                <Col
+                  xs={12}
+                  sm={6}
+                  md={6}
+                  lg={5}
+                  xl={6}
+                  className="text-center w-100"
+                >
+                  <Card.Text className="text-light fw-semibold text-center pb-2">
+                    {dataHome.bio}
+                  </Card.Text>
+                </Col>
+                <Col
+                  xs={12}
+                  sm={3}
+                  md={3}
+                  lg={3}
+                  xl={2}
+                  className="text-center w-100"
+                >
+                  <Card.Text className="text-light fw-semibold text-center pt-3">
+                    Reddini
+                  </Card.Text>
+                </Col>
+              </div>
             </Card.ImgOverlay>
           </Row>
         </Card>

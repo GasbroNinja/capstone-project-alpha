@@ -23,7 +23,7 @@
     height: 500px;
     max-width: 600px;
     object-fit: cover;
-    border-radius: 50px;
+    border-radius: 40px;
     display: hidden;
     transform: scale(0.9) translateY(0px) translateX(0px);
     animation: bg-animation2 5s  cubic-bezier(0.215, 0.610, 0.355, 1);
@@ -31,11 +31,17 @@
     
 }
 
+.fixImgCardHome::hover {
+    border-radius: 40px;
+    transform: scale(1.2) translateY(0px) translateX(0px);
+}
+
+
 @media screen and (max-width: 576px) {
     .fixImgCardHome {
         height: 100%;
         object-fit: cover;
-        border-radius: 10px;
+        border-radius: 40px;
         display: hidden;
         transform: scale(1) translateY(0px) translateX(0px);
         animation: bg-animation2 2s cubic-bezier(.46, .51, .86, .09);
@@ -65,3 +71,14 @@
     width: 100%;
     
 }
+.contentCard:hover {
+    text-align: center;
+    color: rgb(182, 43, 43);
+    text-shadow: 2px 2px 22px rgb(130, 103, 103);
+    
+    transition: 1s;
+    letter-spacing: 1.75px;
+    transform: scale(1.2) translateY(-30px) translateX(0px);
+
+}
+        
