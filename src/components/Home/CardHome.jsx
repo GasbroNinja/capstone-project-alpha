@@ -13,7 +13,7 @@ const CardHome = ({ dataHome }) => {
             className=" fixImgCardHome"
           />
           <Row className="d-xs-flex flex-column">
-            <Card.ImgOverlay className=" d-flex flex-column align-items-center justify-content-end border border-5 rounded-5 border-secondary">
+            <Card.ImgOverlay className=" d-flex flex-column align-items-center justify-content-end border border-5 rounded-5 border-danger">
               <div className="contentCard">
                 <Col
                   xs={12}

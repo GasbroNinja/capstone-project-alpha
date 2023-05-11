@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "title": "Dario Germanà AKA 'ZOCK' ",
+    "img": "https://i.ibb.co/DRp79fv/1973731-10203502768958727-1431382917-o.jpg",
+    "bio": "IL PRESIDENTE"
+  },
+  {
+    "id": "2",
+    "title": "Roberto Zappia AKA 'ZIPPO'",
+    "img": "https://media.licdn.com/dms/image/C5603AQERGLSbK6bJ1Q/profile-displayphoto-shrink_800_800/0/1631008955604?e=2147483647&v=beta&t=U8sxibjVNlDojZ4ia4-YGt7j9BhvQtiNTPfRMuPeRt4",
+     "bio": "L'ESPORTS CASTER"
+  },
+    {
+    "id": "3",
+    "title": "Emanuele Minissale AKA 'MANU'",
+    "img": "https://i.ibb.co/9r4qBq8/54436458-10218486447576996-1834938856395243520-n.jpg",
+    "bio": "L'EROE DEI REDDINI"
+  }
+]

@@ -25,9 +25,9 @@ const FirstSlideHome = () => {
           <Row
             xs={1}
             sm={1}
-            md={1}
-            lg={1}
-            xl={2}
+            md={2}
+            lg={3}
+            xl={3}
             className="row-cols-1 g-3 d-flex justify-content-center align-items-center"
           >
             {dataHome &&

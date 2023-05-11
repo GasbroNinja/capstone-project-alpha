@@ -5,6 +5,7 @@ import { Card, Col, Container, Row, } from 'react-bootstrap';
 import sfondoCard1 from "../assets/images/hogwarts-legacy-3840x2160-10410.jpg";
 import NavbarMain from './NavbarMain';
 import { MdEmojiEvents } from "react-icons/md";
+import Footer from './Footer';
 
 const LandingPage = () => {
 
@@ -81,6 +82,10 @@ const LandingPage = () => {
             ))}
           </Row>
         </div>
+
+
+        <Footer />
+        
       </Container>
     </Container>
   );

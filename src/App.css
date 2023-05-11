@@ -12,8 +12,8 @@ body {
 }
 
 .backGroundNeon{
-    height: 100vh;
-    background-image: url("../src/assets/images/horizon.jpg");
+    height: 100%;
+    background-image: url("../src/assets/images/bg-definitivo-red.png");
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -24,8 +24,8 @@ body {
 
 
 .homeBase{
-    height: 100vh;
-    background-image: url("../src/assets/images/horizon.jpg");
+    height: 100%;
+    background-image: url("../src/assets/images/bg-definitivo-red.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover ;
@@ -35,7 +35,7 @@ body {
 @media screen and (max-height: 750px) {
     .backGroundNeon {
             
-            background-image: url("../src/assets/images/horizon.jpg");
+            background-image: url("../src/assets/images/bg-definitivo-red.png");
             background-position: center;
             background-repeat: no-repeat;
             object-fit: cover;
@@ -43,7 +43,7 @@ body {
         }
     .homeBase {
             height: 100%;
-            background-image: url("../src/assets/images/horizon.jpg");
+            background-image: url("../src/assets/images/bg-definitivo-red.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -215,8 +215,8 @@ body {
 /*------------  CARD LANDING PAGE  ---------------- */
 
 .cardLandingPage{
-    max-width: 700px;
-    max-height: 700px;
+    max-width: 600px;
+    max-height: 500px;
     box-shadow: 3px 3px 20px 0px rgb(47, 1, 1);
     border-radius: 50px;
     padding: auto;
@@ -285,7 +285,7 @@ body {
         background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        background-image: url("../src/assets/images/bg-red-black-white.jpg");
+        background-image: url("../src/assets/images/bg-testo-forse-def.png");
         background-size: 280%;
         animation: bg-animation 10s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
         text-shadow: 1px 5px 90px rgb(187, 187, 187);
@@ -339,4 +339,38 @@ body {
     animation: bg-animation 10s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
     text-shadow: 1px 5px 90px rgb(187, 187, 187);
 }
+
+/*----------- FOOTER  --------------*/
+
+
+.FooterText {
+    min-height: 40%;
+    background-size: cover;
+    background-color: rgb(85, 0, 20);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.bgFooterText {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 12px;
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: url("../src/assets/images/bg-testo-forse-def.png");
+    background-size: 150%;
+    animation: bg-animation 30s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
+    text-shadow: 1px 5px 90px rgb(187, 187, 187);
+    padding: 0 20px;
+    text-align: center;
+}
+
 
