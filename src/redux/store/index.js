@@ -1,18 +1,16 @@
-import { configureStore, combineReducers} from "@reduxjs/toolkit"
-import albumReducer from "../reducers/albumReducer";
-import favouritesReducer from "../reducers/favouritesReducers";
-import isPlayReducer from "../reducers/isPlayReducer";
-
-
-
+import { configureStore, combineReducers} from "@reduxjs/toolkit";
+import { compose, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import profile from '../reducers/profile';
 
 const rootReducer = combineReducers({
-  /*album: albumReducer,
-  favourites: favouritesReducer,
-  isPlay: isPlayReducer*/
+  user: profile
 });
 
-const store = configureStore({
-    reducer: rootReducer
+const store = configureStore
+({
+  reducer: rootReducer,
+  compose: (applyMiddleware(thunk))
 });
+
 export default store;
