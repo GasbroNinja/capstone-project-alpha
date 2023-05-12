@@ -23,6 +23,8 @@ import {
 import FirstSlideHome from './FirstSlideHome';
 import SecondSlideHome from './SecondSlideHome';
 import "../Home/home.css"
+import Login from '../LoginForm';
+import Footer from '../Footer';
 
   const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
   const FadeUp = batch(Fade(), Move(), Sticky());
@@ -52,11 +54,20 @@ const Home = () => {
         <Container fluid className="homeBase1 p-0">
           <ScrollPage page={1}>
             <SecondSlideHome />
+            <Footer />
           </ScrollPage>
         </Container>
       </Container>
-
-
+      {/* TERZA SLIDE HOME */}
+      {/*<Container fluid className="backGroundNeon1 p-0">
+        <Container fluid className="homeBase1 p-0">
+          <ScrollPage page={2}>
+            <Animator animation={batch(Sticky(40, 85), FadeIn())}>
+              <Footer />
+            </Animator>
+          </ScrollPage>
+        </Container>
+      </Container>*/}
     </ScrollContainer>
   );
 }

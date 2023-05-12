@@ -19,7 +19,7 @@ const NavbarMain = ({ ...props }) => {
     <>
       <Container
         fluid
-        className="d-flex justify-content-start align-items-center"
+        className="d-flex justify-content-between align-items-center"
       >
         <Button
           variant="outline-dark"
@@ -80,14 +80,25 @@ const NavbarMain = ({ ...props }) => {
             </Button>
           </Offcanvas.Body>
         </Offcanvas>
+        <div className="d-none d-sm-flex justify-content-center px-auto">
+          <Link to={"/"} className="text-decoration-none">
+            <img
+              src={logoredshift}
+              alt="logo-redshift"
+              className="logoRedshift"
+            />
+          </Link>
+        </div>
       </Container>
-      <div className="d-flex justify-content-center">
-        <Link to={"/"} className="text-decoration-none">
-          <img
-            src={logoredshift}
-            alt="logo-redshift"
-            className="logoRedshift"
-          />
+
+      <div className="d-flex justify-content-between">
+        <Link to={"/login"} className="text-decoration-none">
+          <Button
+            variant="outline-dark"
+            className="btnNavOffcanv text-uppercase fs-4"
+          >
+            Accedi
+          </Button>
         </Link>
       </div>
     </>

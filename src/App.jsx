@@ -6,11 +6,13 @@ import LandingPage from "./components/LandingPage";
 import Tesseramento from "./components/Tesseramento/Tesseramento";
 import Community from "./components/Community/Community";
 import Events from "./components/Eventi/Events";
+import Login from "./components/LoginForm";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/login" element={<Login />} />
         <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<Home />} />
         <Route path="/tesseramento" element={<Tesseramento />} />

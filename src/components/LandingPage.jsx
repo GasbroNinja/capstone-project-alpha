@@ -54,7 +54,7 @@ const LandingPage = () => {
                         </Card.Title>
                       </Col>
                       <Col xs={12} sm={6} md={6} lg={5} xl={6}>
-                        <Card.Text className="textCardBio text-light fw-semibold text-center pb-2">
+                        <Card.Text className="textCardBio fs-6 text-light fw-semibold text-center pb-2">
                           Nuovo evento tema Harry Potter, vieni anche tu giorno
                           21 per partecipare ad una giornata all'insegna della
                           saga di maghi più apprezzata di sempre, tra minigiochi
@@ -83,9 +83,7 @@ const LandingPage = () => {
           </Row>
         </div>
 
-
         <Footer />
-        
       </Container>
     </Container>
   );

@@ -8,13 +8,13 @@ import "../Home/home.css";
 const SecondSlideHome = () => {
   return (
     <>
-      <Animator animation={batch(MoveIn(500, -500), MoveOut(0, +1000))}>
+      <Animator animation={batch(MoveIn(500, -500), MoveOut(0, -1000))}>
         <Container className="d-flex flex-column justify-content-center align-items-center overflow-hidden">
           <div className="welcomePage backgroundText py-4 ">
             <div className="d-inline-flex flex-column justify-content-center my-2">
               <h2 className="d-flex fst-italic d-flex justify-content-center ">
                 CHI SIAMO <br />
-                I SOCI
+                <br />I SOCI
               </h2>
             </div>
           </div>
