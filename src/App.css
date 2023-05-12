@@ -1,3 +1,8 @@
+.html {
+    display: block;
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,8 +16,29 @@ body {
     
 }
 
+::selection {
+    color: rgb(255, 116, 116);
+    background: rgba(86, 7, 7, 0.604);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 12px rgba(102, 46, 46, 0.491);
+    border-radius: 20px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 6px rgba(240, 74, 74, 0.5);
+
+}
+
 .backGroundNeon{
-    height: 100%;
+    height: 100vh;
     background-image: url("../src/assets/images/bg-definitivo-red.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -54,7 +80,7 @@ body {
 @media screen and (max-width: 576px){
     .homeBase {
     height: 100%;
-    background-image: url("../src/assets/images/horizon.jpg");
+    background-image: url("../src/assets/images/bg-definitivo-red.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -227,14 +253,14 @@ body {
 @media screen and (max-width: 576px) {
     .ImgResponsivenessLP {
         width: 100%;
-        height: 100%;
+        height: 600px;
         border-radius: 50px;
         object-fit: cover;
     }
     .cardLandingPage {
             margin: 0 16px;
             max-width: 400px;
-            height: 500px;
+            height: 600px;
             box-shadow: 3px 3px 20px 0px rgb(47, 1, 1);
             border-radius: 50px;
             padding: auto;
@@ -243,11 +269,26 @@ body {
         padding: 0 0px;
         display: hidden;
         max-width: 400px;
-        height: 500px;
+        height: 300px;
         transform: scale(0.8);
         animation: cardAnimationLand 5s 1 cubic-bezier(0.215, 0.610, 0.355, 1);
     }
     
+}
+
+.textCardBio {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: url("../src/assets/images/sfondocard-white-orange.png");
+    background-size: 220%;
+    animation: bg-animation 7s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
+    text-shadow: 1px 5px 90px rgb(199, 199, 199);
 }
 
 @media screen and (min-width: 1400px) {
@@ -285,10 +326,10 @@ body {
         background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        background-image: url("../src/assets/images/bg-testo-forse-def.png");
-        background-size: 280%;
-        animation: bg-animation 10s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
-        text-shadow: 1px 5px 90px rgb(187, 187, 187);
+        background-image: url("../src/assets/images/sfondocard-white-orange.png");
+        background-size: 220%;
+        animation: bg-animation 7s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
+        text-shadow: 1px 5px 90px rgb(199, 199, 199);
     }
 
 }
@@ -309,6 +350,8 @@ body {
     animation: cardAnimationLand 5s 1 cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
+
+
 @keyframes cardAnimationLand{
     0%{display: flex;
         transition: 1s;
@@ -325,19 +368,39 @@ body {
 
 
 
-.textCardBio{
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1.5px;
-    color: transparent;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image: url("../src/assets/images/bg-red-black-white.jpg");
-    background-size: 280%;
-    animation: bg-animation 10s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
-    text-shadow: 1px 5px 90px rgb(187, 187, 187);
+
+/*-------------- LOGIN  ----------------*/
+
+.Login{
+    margin: 150px 0;
+    width: 100%;
+    color: #ffffff;
+    
+    appearance: none;
+    
+    
+}
+
+.formController{
+    border: none;
+    appearance: none;
+    box-shadow: 3px 3px 20px 0px rgb(47, 1, 1);
+    border: 2px solid rgb(197, 99, 99);
+    text-shadow: 1px 5px 90px rgb(209, 209, 209);
+    color: #efadad;
+    background-color: rgb(31, 31, 31);
+}
+
+.formController:focus{
+    background-color: rgba(111, 111, 111, 0.386);
+    color: #efadad;
+    border: 2px solid rgba(177, 65, 65, 0.523);
+}
+
+
+.bgFormsStyle{
+    box-shadow: 3px 3px 20px 0px rgb(194, 142, 142);
+
 }
 
 /*----------- FOOTER  --------------*/
@@ -360,7 +423,7 @@ body {
     font-weight: 800;
     width: 100%;
     font-size: 16px;
-    letter-spacing: 12px;
+    letter-spacing: 8px;
     color: transparent;
     background-clip: text;
     -webkit-text-fill-color: transparent;

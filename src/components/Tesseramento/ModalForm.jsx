@@ -1,266 +1,155 @@
-import React from 'react'
-import { Container } from 'react-bootstrap';
+import React, { useState } from 'react'
+import { Button, Container, Form } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import { Animator, MoveOut, batch } from 'react-scroll-motion';
 
 const ModalForm = () => {
 
-    const { firstName, lastName, age, email, telephone, state, country, address, address1, address2, interests, subscribenewsletter } = this.state.user;
-    const { submitted } = this.state;
-    const listState = stateList.listStates.map((item, key) =>
-      <option key={key} value={item.name}>{item.name}</option>
-    );
+    const navigate = useNavigate();
 
+    const [name, setName] = useState("");
+    
+    const [surname, setSurname] = useState("");
+
+    const [numberPhone, setNumberPhone] = useState("");
+    
+    const [username, setUsername] = useState("");
+
+   // via, comune diresidenza , cod fiscale, data di nascita
+
+    const [age, setAge] = useState("");
+
+    const [email, setEmail] = useState("");
+
+
+    function validateForm() {
+      return (
+        name.length > 0 &&
+        surname.length > 0 &&
+        username.length > 0 &&
+        age.length > 0 &&
+        email.length > 0 &&
+        numberPhone.length > 0
+      );
+    }
+
+    function handleSubmit(event) {
+      event.preventDefault();
+    }
 
   return (
     <>
-      <Animator animation={batch(MoveOut(0, -1000))}>
-        <Container className="d-flex flex-column justify-content-center align-items-center overflow-hidden">
-          <div className="welcomePage backgroundText py-5">
-            <div className="d-inline-flex flex-column justify-content-center my-2">
+      <Container className="d-flex flex-column justify-content-center align-items-center overflow-hidden">
+        <Animator animation={batch(MoveOut(0, -1000))}>
+          <div className="welcomePage backgroundText py-2">
+            <div className="d-inline-flex flex-column justify-content-center">
               <h2 className="d-flex fst-italic d-flex justify-content-center">
                 Tessarati ! <br />
               </h2>
             </div>
           </div>
 
-          <div className="rightPanel">
-            <div className="row">
-              <label className="col-sm-2 col-form-label">Name</label>
-              <div className="col-sm-3 mb-2">
-                <input
-                  type="text"
-                  value={firstName}
-                  name="firstName"
-                  onChange={(e) => {
-                    this.inputChange(e);
-                  }}
-                  className="form-control"
-                  placeholder="First Name"
+          <div className="Login d-flex align-items-center justify-content-center">
+            <Form
+              className="bg-dark p-3 rounded rounded-4 bgFormsStyle"
+              onSubmit={handleSubmit}
+            >
+              <Form.Group size="lg" controlId="name">
+                <Form.Label className="FooterText bgFooterText fs-3 text-uppercase py-2">
+                  Nome / name
+                </Form.Label>
+
+                <Form.Control
+                  className="formController mb-4"
+                  type="password"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
-                {submitted && this.state.errors.user.firstName.length > 0 && (
-                  <span className="error">
-                    {this.state.errors.user.firstName}
-                  </span>
-                )}
-              </div>
-              <div className="col-sm-3 mb-2">
-                <input
-                  type="text"
-                  value={lastName}
-                  name="lastName"
-                  onChange={(e) => {
-                    this.inputChange(e);
-                  }}
-                  className="form-control"
-                  placeholder="Last Name"
+              </Form.Group>
+
+              <Form.Group size="lg" controlId="surname">
+                <Form.Label className="FooterText bgFooterText fs-3 text-uppercase py-2">
+                  Cognome / Surname
+                </Form.Label>
+
+                <Form.Control
+                  className="formController mb-4"
+                  type="Cognome / Surname"
+                  value={surname}
+                  onChange={(e) => setSurname(e.target.value)}
                 />
-              </div>
-              <div className="col-sm-4"></div>
-            </div>
-            <div className="row">
-              <label
-                htmlFor="formControlAgeRange"
-                className="col-sm-2 col-form-label"
-              >
-                Age
-              </label>
-              <div className="col-sm-6 mb-2">
-                <InputRange
-                  min={1}
-                  max={100}
-                  step={1}
+              </Form.Group>
+
+              <Form.Group size="lg" controlId="cellnumber">
+                <Form.Label className="FooterText bgFooterText fs-3 text-uppercase py-2">
+                  Numero di Telefono
+                </Form.Label>
+
+                <Form.Control
+                  className="formController mb-4"
+                  type="Numero di Telefono / Cellphone Number"
+                  value={numberPhone}
+                  onChange={(e) => setNumberPhone(e.target.value)}
+                />
+              </Form.Group>
+
+              <Form.Group size="lg" controlId="username">
+                <Form.Label className="FooterText bgFooterText fs-3 text-uppercase py-2">
+                  Username
+                </Form.Label>
+
+                <Form.Control
+                  className="formController mb-4"
+                  type="Username"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                />
+              </Form.Group>
+
+              <Form.Group size="lg" controlId="age">
+                <Form.Label className="FooterText bgFooterText fs-3 text-uppercase py-2">
+                  Età / Age
+                </Form.Label>
+
+                <Form.Control
+                  className="formController mb-4"
+                  type="Età / Age"
                   value={age}
-                  onChangeInputRange={this.onChangeInputRange}
+                  onChange={(e) => setAge(e.target.value)}
                 />
-              </div>
-              <div className="col-sm-4"></div>
-            </div>
-            <div className="row">
-              <label htmlFor="email" className="col-sm-2 col-form-label">
-                Email
-              </label>
-              <div className="col-sm-6 mb-2">
-                <input
+              </Form.Group>
+
+              <Form.Group size="lg" controlId="email">
+                <Form.Label className="FooterText bgFooterText fs-3 text-uppercase py-2">
+                  Email
+                </Form.Label>
+
+                <Form.Control
+                  autoFocus
                   type="email"
                   value={email}
-                  name="email"
-                  onChange={(e) => {
-                    this.inputChange(e);
-                  }}
-                  className="form-control"
-                  id="email"
-                  placeholder="itjebasuthan@gmail.com"
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="formController"
                 />
-                {submitted && this.state.errors.user.email.length > 0 && (
-                  <span className="error">{this.state.errors.user.email}</span>
-                )}
-              </div>
-              <div className="col-sm-4"></div>
-            </div>
-            <div className="row">
-              <label htmlFor="telephone" className="col-sm-2 col-form-label">
-                Tel
-              </label>
-              <div className="col-sm-6 mb-2">
-                <input
-                  type="text"
-                  pattern="[0-9]"
-                  maxLength="14"
-                  value={telephone}
-                  name="telephone"
-                  onChange={(e) => {
-                    this.inputChange(e);
-                  }}
-                  className="form-control"
-                  id="telephone"
-                  placeholder="(212)477-1000"
-                />
-                {submitted && this.state.errors.user.telephone.length > 0 && (
-                  <span className="error">
-                    {this.state.errors.user.telephone}
-                  </span>
-                )}
-              </div>
-              <div className="col-sm-4"></div>
-            </div>
-            <div className="row">
-              <label htmlFor="staticEmail1" className="col-sm-2 col-form-label">
-                State
-              </label>
-              <div className="col-sm-6 mb-2">
-                <select
-                  className="custom-select"
-                  value={state}
-                  name="state"
-                  id="inlineFormCustomSelect"
-                  onChange={this.inputChange}
+              </Form.Group>
+
+              <div className="d-flex align-items-center justify-content-center">
+                <Button
+                  className="formController py-2"
+                  block
+                  size="lg"
+                  type="submit"
+                  variant="danger"
+                  disabled={!validateForm()}
+                  onClick={() => navigate("/home")}
                 >
-                  {listState}
-                </select>
+                  Login
+                </Button>
               </div>
-              <div className="col-sm-4"></div>
-            </div>
-            <div className="row">
-              <label htmlFor="staticEmail1" className="col-sm-2 col-form-label">
-                Country
-              </label>
-              <div className="col-sm-6 mb-2">
-                <select
-                  className="custom-select"
-                  value={country}
-                  name="country"
-                  id="inlineFormCustomSelect"
-                  onChange={this.inputChange}
-                >
-                  <option value="US">United States</option>
-                  <option value="IN">India</option>
-                </select>
-              </div>
-              <div className="col-sm-4"></div>
-            </div>
-            <div className="row">
-              <label htmlFor="staticEmail1" className="col-sm-2 col-form-label">
-                Address
-              </label>
-              <div className="col-sm-6 mb-2">
-                <select
-                  className="custom-select mb-2"
-                  value={address}
-                  id="inlineFormCustomSelect"
-                  onChange={this.onChangeAddress}
-                >
-                  <option value="Home">Home</option>
-                  <option value="Company">Company</option>
-                </select>
-                <div className="row col-sm-12">
-                  <div className="col-sm-5 mr-sm-1 mb-2">
-                    <textarea
-                      className="form-control"
-                      name="address1"
-                      rows="3"
-                      placeholder={address + " Address1"}
-                      value={address1}
-                      onChange={this.inputChange}
-                    ></textarea>
-                    {submitted &&
-                      this.state.errors.user.address1.length > 0 && (
-                        <span className="error">
-                          {this.state.errors.user.address1}
-                        </span>
-                      )}
-                  </div>
-                  <div className="col-sm-5 mr-sm-1 mb-2">
-                    <textarea
-                      className="form-control"
-                      name="address2"
-                      rows="3"
-                      placeholder={address + " Address2"}
-                      value={address2}
-                      onChange={this.inputChange}
-                    ></textarea>
-                    {submitted &&
-                      this.state.errors.user.address2.length > 0 && (
-                        <span className="error">
-                          {this.state.errors.user.address2}
-                        </span>
-                      )}
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-4"></div>
-            </div>
-            <div className="row">
-              <label htmlFor="staticEmail1" className="col-sm-2 col-form-label">
-                Interests
-              </label>
-              <div className="col-sm-6 mb-2">
-                <MultiSelect
-                  className="form-control"
-                  searchPlaceholder="Interests"
-                  selected={interests}
-                  onSelect={this.onSelectedInterest}
-                />
-                {submitted && this.state.errors.user.interests.length > 0 && (
-                  <span className="error">
-                    {this.state.errors.user.interests}
-                  </span>
-                )}
-              </div>
-              <div className="col-sm-4"></div>
-            </div>
-            <div className="row">
-              <div className="col-sm-2"></div>
-              <div className="col-sm-6 mb-2">
-                <label htmlFor="subscribenewsletter">
-                  <input
-                    type="checkbox"
-                    checked={subscribenewsletter}
-                    name="subscribenewsletter"
-                    onChange={this.checkboxChange}
-                    id="subscribenewsletter"
-                    style={{ margin: "10px" }}
-                  />
-                  Subscribe to the news letter
-                </label>
-              </div>
-              <div className="col-sm-4"></div>
-            </div>
-            <div className="row">
-              <div className="col-sm-5 mb-2"></div>
-              <div className="col-sm-4">
-                <button
-                  type="button"
-                  className="button"
-                  onClick={this.submitForm}
-                >
-                  Submit
-                </button>
-              </div>
-              <div className="col-sm-3"></div>
-            </div>
+            </Form>
           </div>
-        </Container>
-      </Animator>
+        </Animator>
+      </Container>
     </>
   );
 }
