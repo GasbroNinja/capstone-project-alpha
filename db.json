@@ -1,24 +1,46 @@
 {
-  "home": [
+  "cardshome": [
   {
     "id": "1",
-    "title": "Arcade Ingresso",
+    "title": "GAMING",
     "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/57/b7/5e/postazioni-pc-gaming.jpg?w=1200&h=1200&s=1",
-    "bio": "lorem ipsum"
+    "bio": "Gioca e scarica il tuo gioco preferito e giocalo con i nostri PC e Console"
   },
   {
     "id": "2",
-    "title": "Arcade",
+    "title": "TORNEI",
     "img": "https://cdn-az.allevents.in/events5/banners/8e9bbb57b79f98669387cd546ac8e0a1f6110f4d6ecb2ab86dc7b0ea6359721b-rimg-w1200-h890-gmir.jpg?v=1681314193",
-     "bio": "lorem ipsum"
+     "bio": "Partecipa ai nostri Tornei mensili e settimanali, per i Vincitori sono garantiti dei Premi nell'ambito del Gaming"
   },
     {
     "id": "3",
-    "title": "Entrata Red",
+    "title": "SESSIONI GDR",
     "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/57/da/d3/taverna-per-giochi-da.jpg?w=1200&h=-1&s=1",
-    "bio": "lorem ipsum"
+    "bio": "Armati di matite e dadi e parti per un Viaggio incredibile"
   }
   ],
+  "staff": [
+
+  {
+    "id": "1",
+    "title": "Dario Germanà AKA 'ZOCK' ",
+    "img": "https://i.ibb.co/DRp79fv/1973731-10203502768958727-1431382917-o.jpg",
+    "bio": "IL PRESIDENTE"
+  },
+  {
+    "id": "2",
+    "title": "Roberto Zappia AKA 'ZIPPO'",
+    "img": "https://media.licdn.com/dms/image/C5603AQERGLSbK6bJ1Q/profile-displayphoto-shrink_800_800/0/1631008955604?e=2147483647&v=beta&t=U8sxibjVNlDojZ4ia4-YGt7j9BhvQtiNTPfRMuPeRt4",
+     "bio": "L'ESPORTS CASTER"
+  },
+    {
+    "id": "3",
+    "title": "Emanuele Minissale AKA 'MANU'",
+    "img": "https://i.ibb.co/9r4qBq8/54436458-10218486447576996-1834938856395243520-n.jpg",
+    "bio": "L'EROE DEI REDDINI"
+  }
+  ],
+
   "comments": [
     {
       "id": 1,

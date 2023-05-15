@@ -28,19 +28,52 @@
 }
 
 .homeBase1 {
-    height: 100vh;
+    height: 100%;
     background-image: url("../../assets/images/bg-definitivo-red.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .backGroundNeon1 {
-    height: 100%;
+    height: 100vh;
     background-image: url("../../assets/images/bg-definitivo-red.png");
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
+
+}
+
+.tesseramentoCard {
+    
+    width: 60%;
+    color: #ffffff;
+    appearance: none;
+    margin-bottom: 100px;
+
+}
+
+.formController {
+    height: 50px;
+    border: none;
+    appearance: none;
+    box-shadow: 3px 3px 20px 0px rgb(47, 1, 1);
+    border: 2px solid rgb(197, 99, 99);
+    text-shadow: 1px 5px 90px rgb(209, 209, 209);
+    color: #efadad;
+    background-color: rgb(31, 31, 31);
+}
+
+.formController:focus {
+    background-color: rgba(111, 111, 111, 0.386);
+    color: #efadad;
+    border: 2px solid rgba(177, 65, 65, 0.523);
+}
+
+
+.bgFormsStyle {
+    box-shadow: 3px 3px 20px 0px rgb(194, 142, 142);
 
 }

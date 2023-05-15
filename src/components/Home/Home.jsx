@@ -1,33 +1,18 @@
 import React from 'react'
-import { Container, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import NavbarMain from '../NavbarMain';
 
 import {
-  Animator,
   ScrollContainer,
   ScrollPage,
-  batch,
-  Fade,
-  FadeIn,
-  FadeOut,
-  Move,
-  MoveIn,
-  MoveOut,
-  Sticky,
-  StickyIn,
-  StickyOut,
-  Zoom,
-  ZoomIn,
-  ZoomOut,
 } from "react-scroll-motion";
 import FirstSlideHome from './FirstSlideHome';
 import SecondSlideHome from './SecondSlideHome';
 import "../Home/home.css"
-import Login from '../LoginForm';
 import Footer from '../Footer';
 
-  const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
-  const FadeUp = batch(Fade(), Move(), Sticky());
+ // const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
+ // const FadeUp = batch(Fade(), Move(), Sticky());
 
 
 const Home = () => {

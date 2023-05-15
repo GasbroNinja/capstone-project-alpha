@@ -14,16 +14,16 @@ const CardHome2 = ({ staffHome }) => {
           />
           <Row className="d-xs-flex flex-column">
             <Card.ImgOverlay className=" d-flex flex-column align-items-center justify-content-end border border-5 rounded-5 border-light">
-              <div className="contentCard">
+              <div className="">
                 <Col
                   xs={12}
                   sm={3}
                   md={3}
                   lg={4}
                   xl={4}
-                  className="text-center w-100"
+                  className=" text-center w-100"
                 >
-                  <Card.Title className="text-center fw-bold fs-1 pb-1">
+                  <Card.Title className="contentCard text-center fw-bold fs-1 pb-1">
                     {staffHome.title}
                   </Card.Title>
                 </Col>

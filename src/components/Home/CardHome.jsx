@@ -2,19 +2,19 @@ import React from 'react'
 import { Card, Col, Row } from 'react-bootstrap';
 import "../Home/home.css"
 
-const CardHome = ({ dataHome }) => {
+const CardHome = ({ cardsHome }) => {
   return (
     <>
       <Col xs={12} lg={6} xl={6} xxl={4} className="p-0 px-3">
         <Card className="cardLandingPage bg-dark text-white my-4 mx-2  ">
           <Card.Img
-            src={dataHome.img}
+            src={cardsHome.img}
             alt="Redshift Sala"
             className=" fixImgCardHome"
           />
           <Row className="d-xs-flex flex-column">
             <Card.ImgOverlay className=" d-flex flex-column align-items-center justify-content-end border border-5 rounded-5 border-danger">
-              <div className="contentCard">
+              <div className="">
                 <Col
                   xs={12}
                   sm={3}
@@ -23,8 +23,8 @@ const CardHome = ({ dataHome }) => {
                   xl={4}
                   className="text-center w-100"
                 >
-                  <Card.Title className="text-center fw-bold fs-1 pb-1">
-                    {dataHome.title}
+                  <Card.Title className="contentCard text-center fw-bold fs-1 pb-1">
+                    {cardsHome.title}
                   </Card.Title>
                 </Col>
                 <Col
@@ -36,7 +36,7 @@ const CardHome = ({ dataHome }) => {
                   className="text-center w-100"
                 >
                   <Card.Text className="text-light fw-semibold text-center pb-2">
-                    {dataHome.bio}
+                    {cardsHome.bio}
                   </Card.Text>
                 </Col>
                 <Col

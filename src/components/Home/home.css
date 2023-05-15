@@ -105,8 +105,8 @@
     text-shadow: 2px 2px 22px rgb(130, 103, 103);
     
     transition: 1s;
-    letter-spacing: 1.75px;
-    transform: scale(1.2) translateY(-30px) translateX(0px);
+    letter-spacing: 1.5px;
+    transform: scale(1.1) translateY(-30px) translateX(0px);
 
 }
         

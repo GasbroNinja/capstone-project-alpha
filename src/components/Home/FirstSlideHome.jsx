@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import { Animator, MoveOut, Sticky, batch } from 'react-scroll-motion';
-import dataHome from "../Home/dataHome.json";
+import { Animator, MoveOut, batch } from 'react-scroll-motion';
+
 import CardHome from "./CardHome";
 import "../Home/home.css";
+import { useDispatch, useSelector } from 'react-redux';
+import cardsStorage from '../../redux/reducers/cardHomeReducer';
 //import { MdEmojiEvents } from "react-icons/md";
 
+
+
 const FirstSlideHome = () => {
+
+      const dispatch = useDispatch();
+      const cardsHome = useSelector((state) => state.cards.content);
+      console.log(cardsHome);
+
+      useEffect(() => {
+        dispatch(cardsStorage());
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+      }, []);
+
   return (
     <>
       <Animator animation={batch(MoveOut(0, -1000))}>
@@ -30,9 +45,9 @@ const FirstSlideHome = () => {
             xl={3}
             className="row-cols-1 g-3 d-flex justify-content-center align-items-center"
           >
-            {dataHome &&
-              dataHome.map((dataHome) => (
-                <CardHome key={dataHome.id} dataHome={dataHome} />
+            {cardsHome &&
+              cardsHome.map((cardsHome) => (
+                <CardHome key={cardsHome.id} cardsHome={cardsHome} />
               ))}
           </Row>
         </Container>

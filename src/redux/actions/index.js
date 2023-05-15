@@ -25,7 +25,7 @@ export const getAlbumsAction = query => {
 };
 
 */
-
+export const GET_CARDS = "GET_CARDS";
 
 export const Types = {
   LOGIN: 'LOGIN',
@@ -47,3 +47,30 @@ export const ActionCreators = {
 
   login: (user) => ({ type: Types.LOGIN, payload: { user } })
 }
+
+export const getPostsHomeAction = () => {
+    return async dispatch => {
+    const baseEndpoint = "http://localhost:3500/cardshome"
+    const HEADERS = {
+        headers: {
+           "Content-Type": "application/json; charset=utf-8",
+        }
+
+    }
+        try{
+            const response = await fetch(baseEndpoint, HEADERS)
+            if(response.ok) {
+            let arr = await response.json();         
+            arr = arr.slice(0,3)
+            dispatch({ type: GET_CARDS, payload: arr })
+            } else {
+                alert("Error fetching results");
+            }
+
+        } catch (error) {
+            console.log(error);
+        }
+
+
+    };
+};

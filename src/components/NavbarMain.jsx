@@ -22,7 +22,7 @@ const NavbarMain = ({ ...props }) => {
         className="d-flex justify-content-between align-items-center"
       >
         <Button
-          variant="outline-dark"
+          variant="dark"
           onClick={toggleShow}
           className=" me-2 d-flex align-items-center justify-content-top px-3"
         >
@@ -92,9 +92,9 @@ const NavbarMain = ({ ...props }) => {
       </Container>
 
       <div className="d-flex justify-content-between">
-        <Link to={"/login"} className="text-decoration-none">
+        <Link to={"/login"} className="bg-dark rounded-2">
           <Button
-            variant="outline-dark"
+            variant='dark'
             className="btnNavOffcanv text-uppercase fs-4"
           >
             Accedi
