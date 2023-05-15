@@ -3,19 +3,8 @@ import { Types } from '../actions/index.js';
 
 const initialState = {
   profile: {
-    firstName: '',
-    lastName: '',
-    telephone: '',
-    age: 28,
     email: '',
-    state: '',
-    country: '',
-    address: 'Home',
-    address1: '',
-    address2: '',
-    interests: [],
-    profileImage: '',
-    subscribenewsletter: false
+    password:'',
   },
   formSubmitted: false
 }
