@@ -6,14 +6,14 @@ const CardHome = ({ cardsHome }) => {
   return (
     <>
       <Col xs={12} lg={6} xl={6} xxl={4} className="p-0 px-3">
-        <Card className="cardLandingPage bg-dark text-white my-4 mx-2  ">
+        <Card className="cardLandingPage bg-dark text-white my-4 mx-2 flex-wrap ">
           <Card.Img
             src={cardsHome.img}
             alt="Redshift Sala"
             className=" fixImgCardHome"
           />
           <Row className="d-xs-flex flex-column">
-            <Card.ImgOverlay className=" d-flex flex-column align-items-center justify-content-end border border-5 rounded-5 border-danger">
+            <Card.ImgOverlay className="contentCard2 d-flex flex-column align-items-center justify-content-end border border-5 rounded-5 border-danger">
               <div className="">
                 <Col
                   xs={12}
@@ -35,7 +35,7 @@ const CardHome = ({ cardsHome }) => {
                   xl={6}
                   className="text-center w-100"
                 >
-                  <Card.Text className="text-light fw-semibold text-center pb-2">
+                  <Card.Text className=" text-light fw-semibold text-center pb-2">
                     {cardsHome.bio}
                   </Card.Text>
                 </Col>
@@ -47,7 +47,7 @@ const CardHome = ({ cardsHome }) => {
                   xl={2}
                   className="text-center w-100"
                 >
-                  <Card.Text className="text-light fw-semibold text-center pt-3">
+                  <Card.Text className=" text-light fw-semibold text-center pt-3">
                     Reddini
                   </Card.Text>
                 </Col>

@@ -22,7 +22,7 @@ const Home = () => {
     <ScrollContainer>
       <ScrollPage page={0}>
         <Container fluid className="backGroundNeon1 p-0">
-          <Container fluid className="homeBase1 p-0">
+          <Container fluid className="homeBase1 p-0 overflow-hidden">
             <Container
               fluid
               className=" d-flex align-items-center justify-content-start p-3"

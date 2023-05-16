@@ -38,12 +38,12 @@ body {
 }
 
 .backGroundNeon{
-    height: 100vh;
+    height: 100%;
     background-image: url("../src/assets/images/bg-definitivo-red.png");
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
-    min-height: min-content;
+    overflow-y: none;
 }
 
 
@@ -60,7 +60,7 @@ body {
 
 @media screen and (max-height: 750px) {
     .backGroundNeon {
-            
+            height: 100%;
             background-image: url("../src/assets/images/bg-definitivo-red.png");
             background-position: center;
             background-repeat: no-repeat;
@@ -89,7 +89,7 @@ body {
 }
 
 .welcomePage{
-    min-height: 70%;
+    height: 200px;
     background-size: cover;
     background-color: rgb(85, 0, 20);
     color: white;
@@ -180,7 +180,7 @@ body {
     font-family: 'Rubik', sans-serif;
     font-weight: 800;
     font-size: 12px;
-    width: auto;
+    
     letter-spacing: 1.2px;
     color: transparent;
     background-clip: text;
@@ -241,7 +241,7 @@ body {
 /*------------  CARD LANDING PAGE  ---------------- */
 
 .cardLandingPage{
-    max-width: 600px;
+    width: 700px;
     max-height: 500px;
     box-shadow: 3px 3px 20px 0px rgb(47, 1, 1);
     border-radius: 50px;

@@ -5,6 +5,7 @@
     height: 100%;
 }
 
+
 *,
 *:before,
 *:after {
@@ -34,7 +35,7 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-
+    overflow-y: visible;
 }
 
 .backGroundNeon1 {
@@ -48,7 +49,7 @@
 
 .fixImgCardHome {
     
-    height: 500px;
+    height: 300px;
     max-width: 600px;
     object-fit: cover;
     border-radius: 40px;
@@ -59,6 +60,11 @@
     
 }
 
+.alignCards{
+    min-height: 100%;
+}
+
+
 .fixImgCardHome::hover {
     border-radius: 40px;
     transform: scale(1.2) translateY(0px) translateX(0px);
@@ -67,7 +73,7 @@
 
 @media screen and (max-width: 576px) {
     .fixImgCardHome {
-        height: 100%;
+        height: 300px;
         object-fit: cover;
         border-radius: 40px;
         display: hidden;
@@ -103,16 +109,44 @@
     text-align: center;
     color: rgb(182, 43, 43);
     text-shadow: 2px 2px 22px rgb(130, 103, 103);
-    
+    background: rgba(0, 0, 0, 0.5);
     transition: 1s;
     letter-spacing: 1.5px;
     transform: scale(1.1) translateY(-30px) translateX(0px);
 
 }
-        
+
+.contentCard {
+    width: 100%;
+
+}
+
+.contentCard:hover {
+    text-align: center;
+    color: rgb(182, 43, 43);
+    text-shadow: 2px 2px 22px rgb(130, 103, 103);
+    background: rgba(22, 16, 16, 0.8);
+    transition: 1s;
+
+}
+     
+.contentCard2 {
+    max-width: 100%;
+
+}
+
+.contentCard2:hover {
+    text-align: center;
+    color: rgb(255, 190, 190);
+    text-shadow: 2px 2px 22px rgb(130, 103, 103);
+    background: rgba(22, 16, 16, 0.8);
+    transition: 1s;
+
+}
+
 .cardLandingPage {
-    max-width: 700px;
-    max-height: 700px;
+    max-width: 500px;
+    max-height: 500px;
     box-shadow: 3px 3px 20px 0px rgb(47, 1, 1);
     border-radius: 50px;
     padding: auto;
@@ -120,7 +154,7 @@
 
 @media screen and (max-width: 992px) {
     .cardLandingPage {
-        max-width: 300px;
+        width: 300px;
         max-height: 300px;
         box-shadow: 3px 3px 20px 0px rgb(47, 1, 1);
         border-radius: 50px;
@@ -130,7 +164,7 @@
 
 }
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+@media screen and (min-width: 993px) and (max-width: 1201px) {
     .cardLandingPage {
         max-width: 300px;
         max-height: 350px;
@@ -139,6 +173,27 @@
         padding: auto;
     }
 
+
+}
+
+@media screen and (min-width: 1202px) {
+    .cardLandingPage {
+        max-width: 500px;
+        max-height: 550px;
+        box-shadow: 3px 3px 20px 0px rgb(47, 1, 1);
+        border-radius: 50px;
+        padding: auto;
+    }
+
+    .fixImgCardHome {
+        height: 490px;
+        object-fit: cover;
+        border-radius: 40px;
+        display: hidden;
+        transform: scale(1) translateY(0px) translateX(0px);
+        animation: bg-animation2 2s cubic-bezier(.46, .51, .86, .09);
+        animation-iteration-count: 1
+    }
 
 }
 

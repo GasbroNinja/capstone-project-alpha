@@ -13,8 +13,8 @@ const LandingPage = () => {
 
 
   return (
-    <Container fluid className="backGroundNeon p-0">
-      <Container fluid className="backGroundNeon homeBase p-0">
+    <Container fluid className="backGroundNeon p-0 overflow-y-hidden">
+      <Container fluid className="homeBase p-0">
         <Container
           fluid
           className=" d-flex align-items-center justify-content-start p-3"
@@ -22,7 +22,7 @@ const LandingPage = () => {
           <NavbarMain />
         </Container>
 
-        <div className="d-flex flex-column justify-content-center align-items-center overflow-hidden">
+        <div className="d-flex flex-column justify-content-center align-items-center overflow-hidden ">
           <div className="welcomePage backgroundText py-2 px-xs-1 px-sm-1 px-md-0 ">
             <div className=" d-inline-flex flex-column justify-content-center my-3 w-100">
               <h2 className="d-flex fst-italic d-flex justify-content-center">
@@ -47,7 +47,7 @@ const LandingPage = () => {
                     alt="Card image"
                   />
                   <Row className="d-xs-flex d-flex flex-column">
-                    <Card.ImgOverlay className="p-0 cardImgLandingPage d-flex mx-auto flex-column align-items-center justify-content-center">
+                    <Card.ImgOverlay className="p-0 cardImgLandingPage d-flex  flex-column align-items-center justify-content-center">
                       <Col xs={12} sm={3} md={3} lg={4} xl={4}>
                         <Card.Title className="textCardLandingPage text-center fs-2 pb-1">
                           Coppa Delle Casate

@@ -27,7 +27,7 @@ const FirstSlideHome = () => {
     <>
       <Animator animation={batch(MoveOut(0, -1000))}>
         <Container className="d-flex flex-column justify-content-center align-items-center overflow-hidden">
-          <div className="welcomePage backgroundText py-5">
+          <div className="welcomePage backgroundText py-1">
             <div className="d-inline-flex flex-column justify-content-center my-2">
               <h2 className="d-flex fst-italic d-flex justify-content-center">
                 I REDDINI SONO CONNESSI <br />
@@ -37,14 +37,14 @@ const FirstSlideHome = () => {
         </Container>
       </Animator>
       <Animator animation={MoveOut(2000, 0)}>
-        <Container fluid className="d-lg-flex justify-content-center">
+        <Container fluid className="d-lg-flex justify-content-center ">
           <Row
             xs={1}
             sm={1}
-            md={2}
-            lg={3}
+            md={1}
+            lg={2}
             xl={3}
-            className="row-cols-1 g-3 d-flex justify-content-center align-items-center"
+            className="row-cols-1 g-3 d-flex justify-content-center align-items-center alignCards"
           >
             {cardsHome &&
               cardsHome.map((cardsHome) => (
