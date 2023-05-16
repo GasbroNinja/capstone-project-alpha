@@ -5,7 +5,8 @@ import { Animator, MoveOut, batch } from 'react-scroll-motion';
 import CardHome from "./CardHome";
 import "../Home/home.css";
 import { useDispatch, useSelector } from 'react-redux';
-import cardsStorage from '../../redux/reducers/cardHomeReducer';
+
+import { getPostsHomeAction } from '../../redux/actions';
 //import { MdEmojiEvents } from "react-icons/md";
 
 
@@ -17,7 +18,7 @@ const FirstSlideHome = () => {
       console.log(cardsHome);
 
       useEffect(() => {
-        dispatch(cardsStorage());
+        dispatch(getPostsHomeAction());
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
       }, []);

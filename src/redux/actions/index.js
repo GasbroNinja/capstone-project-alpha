@@ -25,7 +25,7 @@ export const getAlbumsAction = query => {
 };
 
 */
-export const GET_CARDS = "GET_CARDS";
+
 
 export const Types = {
   LOGIN: 'LOGIN',
@@ -47,6 +47,8 @@ export const ActionCreators = {
 
   login: (user) => ({ type: Types.LOGIN, payload: { user } })
 }
+
+export const GET_CARDS = "GET_CARDS";
 
 export const getPostsHomeAction = () => {
     return async dispatch => {
