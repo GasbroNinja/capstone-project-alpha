@@ -2,7 +2,7 @@ import { GET_CARDS } from "../actions";
 
 
 const initialstate = {
-  content: null
+  content: []
 };
 
 const cardsStorage = (state = initialstate, action) => {
