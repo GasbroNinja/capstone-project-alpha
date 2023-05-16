@@ -50,7 +50,7 @@ export const ActionCreators = {
 
 export const getPostsHomeAction = () => {
     return async dispatch => {
-    const baseEndpoint = "http://localhost:3500/cardshome"
+    const baseEndpoint = "http://localhost:3001/cardshome"
     const HEADERS = {
         headers: {
            "Content-Type": "application/json; charset=utf-8",
