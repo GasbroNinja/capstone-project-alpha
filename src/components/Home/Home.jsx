@@ -3,8 +3,11 @@ import { Container } from 'react-bootstrap';
 import NavbarMain from '../NavbarMain';
 
 import {
+  Animator,
   ScrollContainer,
   ScrollPage,
+  Sticky,
+  batch,
 } from "react-scroll-motion";
 import FirstSlideHome from './FirstSlideHome';
 import SecondSlideHome from './SecondSlideHome';
@@ -22,15 +25,16 @@ const Home = () => {
     <ScrollContainer>
       <ScrollPage page={0}>
         <Container fluid className="backGroundNeon1 p-0">
-          <Container fluid className="homeBase1 p-0 overflow-hidden">
+          <Container fluid className="homeBase1 p-0">
             <Container
               fluid
               className=" d-flex align-items-center justify-content-start p-3"
             >
               <NavbarMain />
             </Container>
-
-            <FirstSlideHome />
+            
+              <FirstSlideHome />
+            
           </Container>
         </Container>
       </ScrollPage>
@@ -38,21 +42,24 @@ const Home = () => {
       <Container fluid className="backGroundNeon1 p-0">
         <Container fluid className="homeBase1 p-0">
           <ScrollPage page={1}>
-            <SecondSlideHome />
-            <Footer />
+            <section>
+              <SecondSlideHome />
+            </section>
           </ScrollPage>
         </Container>
       </Container>
       {/* TERZA SLIDE HOME */}
-      {/*<Container fluid className="backGroundNeon1 p-0">
+      <Container fluid className="backGroundNeon1 p-0">
         <Container fluid className="homeBase1 p-0">
           <ScrollPage page={2}>
-            <Animator animation={batch(Sticky(40, 85), FadeIn())}>
-              <Footer />
+            <Animator animation={batch(Sticky(50, 120))}>
+              <section>
+                <Footer />
+              </section>
             </Animator>
           </ScrollPage>
         </Container>
-      </Container>*/}
+      </Container>
     </ScrollContainer>
   );
 }

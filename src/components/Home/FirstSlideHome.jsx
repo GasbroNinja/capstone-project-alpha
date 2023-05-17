@@ -36,23 +36,33 @@ const FirstSlideHome = () => {
           </div>
         </Container>
       </Animator>
-      <Animator animation={MoveOut(2000, 0)}>
-        <Container fluid className="d-lg-flex justify-content-center ">
-          <Row
-            xs={1}
-            sm={1}
-            md={1}
-            lg={2}
-            xl={3}
-            className="row-cols-1 g-3 d-flex justify-content-center align-items-center alignCards"
+
+      <Container
+        fluid
+        className="d-lg-flex justify-content-center flex-nowrap "
+      >
+        <Animator animation={MoveOut(2000, 0)}>
+          <div
+            className="d-flex flex-nowrap alignCards"
+            style={{ overflowX: "scroll", overflowY: "hidden" }}
           >
-            {cardsHome &&
-              cardsHome.map((cardsHome) => (
-                <CardHome key={cardsHome.id} cardsHome={cardsHome} />
-              ))}
-          </Row>
-        </Container>
-      </Animator>
+            <Row
+              xs={1}
+              sm={1}
+              md={1}
+              lg={1}
+              xl={1}
+              xxl={1}
+              className="row-cols-1 g-3 d-flex flex-nowrap align-items-center "
+            >
+              {cardsHome &&
+                cardsHome.map((cardsHome) => (
+                  <CardHome key={cardsHome.id} cardsHome={cardsHome} />
+                ))}
+            </Row>
+          </div>
+        </Animator>
+      </Container>
     </>
   );
 }
