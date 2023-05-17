@@ -7,6 +7,7 @@ import {
   ScrollContainer,
   ScrollPage,
   Sticky,
+  StickyIn,
   batch,
 } from "react-scroll-motion";
 import FirstSlideHome from './FirstSlideHome';
@@ -32,9 +33,8 @@ const Home = () => {
             >
               <NavbarMain />
             </Container>
-            
-              <FirstSlideHome />
-            
+
+            <FirstSlideHome />
           </Container>
         </Container>
       </ScrollPage>
@@ -45,21 +45,20 @@ const Home = () => {
             <section>
               <SecondSlideHome />
             </section>
+            <div>
+              <Footer />
+            </div>
           </ScrollPage>
         </Container>
       </Container>
-      {/* TERZA SLIDE HOME */}
+      {/* TERZA SLIDE HOME 
       <Container fluid className="backGroundNeon1 p-0">
         <Container fluid className="homeBase1 p-0">
           <ScrollPage page={2}>
-            <Animator animation={batch(Sticky(50, 120))}>
-              <section>
-                <Footer />
-              </section>
-            </Animator>
+            <section></section>
           </ScrollPage>
         </Container>
-      </Container>
+      </Container>*/}
     </ScrollContainer>
   );
 }

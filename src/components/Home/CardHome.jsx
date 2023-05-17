@@ -5,8 +5,8 @@ import "../Home/home.css"
 const CardHome = ({ cardsHome }) => {
   return (
     <>
-      <Col xs={12} lg={6} xl={6} xxl={4} className="p-0 px-3">
-        <Card className="cardLandingPage bg-dark text-white my-4 mx-2 flex-wrap ">
+      <Col xs={12} lg={12} xl={12} xxl={12} className="px-5 ms-5 cardSingleCol">
+        <Card className="cardLandingPage bg-dark text-white my-4 mx-2 flex-wrap cardSingleColSelect ">
           <Card.Img
             src={cardsHome.img}
             alt="Redshift Sala"

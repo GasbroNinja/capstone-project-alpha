@@ -6,7 +6,7 @@ const CardHome2 = ({ staffHome }) => {
   return (
     <>
       <Col xs={12} lg={6} xl={6} xxl={4} className="p-0 px-3">
-        <Card className="cardLandingPage bg-dark text-white my-4 mx-2  ">
+        <Card className="cardLandingPage bg-dark text-white my-4 mx-2 flex-nowrap ">
           <Card.Img
             src={staffHome.img}
             alt="Redshift Sala"

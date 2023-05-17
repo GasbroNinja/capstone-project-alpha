@@ -17,17 +17,17 @@ section{
 
 }
 
-::-webkit-scrollbar {
+.html::-webkit-scrollbar {
     width: 12px;
 }
 
-::-webkit-scrollbar-track {
+.html::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 12px rgba(102, 46, 46, 0.491);
     border-radius: 20px;
 
 }
 
-::-webkit-scrollbar-thumb {
+.html::-webkit-scrollbar-thumb {
     border-radius: 20px;
     -webkit-box-shadow: inset 0 0 6px rgba(240, 74, 74, 0.5);
 
@@ -65,6 +65,7 @@ section{
 }
 
 .alignCards{
+    width: 100%;
     min-height: 100%;
     overflow-x: "scroll";
     overflow-y: "hidden";
@@ -72,35 +73,40 @@ section{
 
 .alignCards::selection {
     color: rgb(255, 255, 255);
-    background: rgba(255, 255, 255, 0);
+    background: rgba(238, 166, 166, 0.724);
 }
 
 .alignCards::-webkit-scrollbar {
-    width: 24px;
+    max-height: 8px;
+    opacity: 0.2;
+    scroll-snap-align: start;
 }
 
 .alignCards::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 12px rgba(202, 118, 118, 0);
-    border-radius: 20px;
-
+    
+    -webkit-box-shadow: inset 0 0 12px rgb(202, 118, 119);
+    border-radius: 10px;
+    background-color: rgba(180, 107, 115, 0.87);
 }
 
 .alignCards::-webkit-scrollbar-thumb {
-    border-radius: 20px;
-    -webkit-box-shadow: inset 0 0 6px rgba(255, 41, 41, 0);
-
+    opacity: 0.5;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 12px rgba(196, 56, 5, 0.885);
+    background-color: rgba(245, 72, 72, 0.4);
 }
 
 
 .fixImgCardHome::hover {
-    border-radius: 40px;
+    border-radius: 30px;
     transform: scale(1.2) translateY(0px) translateX(0px);
 }
 
 
 @media screen and (max-width: 576px) {
     .fixImgCardHome {
-        height: 300px;
+        width: 100%;
+        height: 295px;
         object-fit: cover;
         border-radius: 40px;
         display: hidden;
@@ -136,26 +142,13 @@ section{
     text-align: center;
     color: rgb(182, 43, 43);
     text-shadow: 2px 2px 22px rgb(130, 103, 103);
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.9);
     transition: 1s;
     letter-spacing: 1.5px;
     transform: scale(1.1) translateY(-30px) translateX(0px);
 
 }
 
-.contentCard {
-    width: 100%;
-
-}
-
-.contentCard:hover {
-    text-align: center;
-    color: rgb(182, 43, 43);
-    text-shadow: 2px 2px 22px rgb(130, 103, 103);
-    background: rgba(22, 16, 16, 0.8);
-    transition: 1s;
-
-}
      
 .contentCard2 {
     max-width: 100%;
@@ -182,28 +175,87 @@ section{
 @media screen and (max-width: 992px) {
     .cardLandingPage {
         width: 300px;
-        max-height: 300px;
+        height: 500px;
         box-shadow: 3px 3px 20px 0px rgb(47, 1, 1);
         border-radius: 50px;
         padding: auto;
     }
+    .fixImgCardHome {
+        height: 500px;
+        max-width: 300px;
+        object-fit: cover;
+        border-radius: 40px;
+        display: hidden;
+        transform: scale(0.9) translateY(0px) translateX(0px);
+        animation: bg-animation2 5s cubic-bezier(0.215, 0.610, 0.355, 1);
+        animation-iteration-count: 1;
 
+    }
+
+    .cardSingleCol {
+        max-width: 300px;
+        padding: 0 100px
+    }
+
+
+
+    .cardSingleColSelect {
+        max-width: 1000px;
+        padding: 0 100px
+    }
+
+    .cardSingleColSelect:hover {
+        transition: 1.5s;
+        max-width: 1000px;
+        margin: 0 50px;
+        padding: 0 100px;
+    }
 
 }
 
 @media screen and (min-width: 993px) and (max-width: 1201px) {
     .cardLandingPage {
-        max-width: 300px;
-        max-height: 350px;
+        width: 500px;
+        height: 500px;
+        box-shadow: 3px 3px 20px 0px rgb(47, 1, 1);
+        border-radius: 50px;
+        padding: auto;
+    }
+    .fixImgCardHome {
+        height: 490px;
+        object-fit: cover;
+        border-radius: 40px;
+        display: hidden;
+        transform: scale(1) translateY(0px) translateX(0px);
+        animation: bg-animation2 2s cubic-bezier(.46, .51, .86, .09);
+        animation-iteration-count: 1
+    }
+
+}
+
+@media screen and (min-width: 1202px) and (max-width: 1399px) {
+    .cardLandingPage {
+        max-width: 500px;
+        max-height: 550px;
         box-shadow: 3px 3px 20px 0px rgb(47, 1, 1);
         border-radius: 50px;
         padding: auto;
     }
 
+    .fixImgCardHome {
+        height: 490px;
+        object-fit: cover;
+        border-radius: 40px;
+        display: hidden;
+        transform: scale(1) translateY(0px) translateX(0px);
+        animation: bg-animation2 2s cubic-bezier(.46, .51, .86, .09);
+        animation-iteration-count: 1
+    }
 
 }
 
-@media screen and (min-width: 1202px) {
+
+@media screen and (min-width: 1400px) {
     .cardLandingPage {
         max-width: 500px;
         max-height: 550px;
@@ -242,3 +294,25 @@ section{
     padding: 0 20px;
     text-align: center;
 }
+
+
+.cardSingleCol {
+    max-width: 2000px;
+    padding: 0 200px
+}
+
+
+
+.cardSingleColSelect{
+    max-width: 500px;
+    padding: 0 400px
+}
+
+.cardSingleColSelect:hover {
+    transition: 1.5s;
+    max-width: 800px;
+    margin: 0 50px;
+    padding: 0 100px;
+}
+
+

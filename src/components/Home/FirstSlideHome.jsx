@@ -26,7 +26,7 @@ const FirstSlideHome = () => {
   return (
     <>
       <Animator animation={batch(MoveOut(0, -1000))}>
-        <Container className="d-flex flex-column justify-content-center align-items-center overflow-hidden">
+        <Container className="d-flex flex-column justify-content-center align-items-center ">
           <div className="welcomePage backgroundText py-1">
             <div className="d-inline-flex flex-column justify-content-center my-2">
               <h2 className="d-flex fst-italic d-flex justify-content-center">
@@ -39,11 +39,11 @@ const FirstSlideHome = () => {
 
       <Container
         fluid
-        className="d-lg-flex justify-content-center flex-nowrap "
+        className=" justify-content-center flex-nowrap "
       >
         <Animator animation={MoveOut(2000, 0)}>
           <div
-            className="d-flex flex-nowrap alignCards"
+            className="d-flex flex-nowrap  alignCards"
             style={{ overflowX: "scroll", overflowY: "hidden" }}
           >
             <Row
@@ -53,7 +53,7 @@ const FirstSlideHome = () => {
               lg={1}
               xl={1}
               xxl={1}
-              className="row-cols-1 g-3 d-flex flex-nowrap align-items-center "
+              className="g-5 d-flex flex-nowrap align-items-center justify-content-center "
             >
               {cardsHome &&
                 cardsHome.map((cardsHome) => (
