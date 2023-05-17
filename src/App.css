@@ -1,6 +1,6 @@
 .html {
     display: block;
-    height: 100%;
+    scroll-snap-type: y mandatory;
 }
 
 body {
@@ -37,13 +37,16 @@ body {
 
 }
 
+
+
 .backGroundNeon{
     height: 100%;
     background-image: url("../src/assets/images/bg-definitivo-red.png");
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
-    overflow-y: none;
+    overflow-x: none;
+    scroll-snap-align: start;
 }
 
 
@@ -55,6 +58,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover ;
+    scroll-snap-align: start;
     
 }
 
