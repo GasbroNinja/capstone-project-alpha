@@ -1,11 +1,11 @@
-/*export const ADD_TO_FAVOURITES = "ADD_TO_FAVOURITES";
+export const ADD_TO_FAVOURITES = "ADD_TO_FAVOURITES";
 export const REMOVE_FROM_FAVOURITES = "REMOVE_FROM_FAVOURITES";
-export const ADD_ALBUM = "ADD_ALBUM";
-export const IS_PLAY = "IS_PLAY";
+/*export const ADD_ALBUM = "ADD_ALBUM";
+export const IS_PLAY = "IS_PLAY";*/
 
-export const addToFavouritesAction = song => ({ type: ADD_TO_FAVOURITES, payload: song });
-export const removeFromFavouritesAction = song => ({ type: REMOVE_FROM_FAVOURITES, payload: song });
-export const isPlayAction = song => ({ type: IS_PLAY, payload: song });
+export const addToFavouritesAction = events => ({ type: ADD_TO_FAVOURITES, payload: events });
+export const removeFromFavouritesAction = events => ({ type: REMOVE_FROM_FAVOURITES, payload: events });
+/*export const isPlayAction = song => ({ type: IS_PLAY, payload: song });
 
 export const getAlbumsAction = query => {
   return async dispatch => {
@@ -65,6 +65,35 @@ export const getPostsHomeAction = () => {
             let arr = await response.json();         
             arr = arr.slice(0,3)
             dispatch({ type: GET_CARDS, payload: arr })
+            } else {
+                alert("Error fetching results");
+            }
+
+        } catch (error) {
+            console.log(error);
+        }
+
+
+    };
+};
+
+export const GET_EVENTS = "GET_EVENTS";
+
+export const getEventsHomeAction = () => {
+    return async dispatch => {
+    const baseEndpoint = "http://localhost:3001/eventi"
+    const HEADERS = {
+        headers: {
+           "Content-Type": "application/json; charset=utf-8",
+        }
+
+    }
+        try{
+            const response = await fetch(baseEndpoint, HEADERS)
+            if(response.ok) {
+            let events = await response.json();         
+            events = events.slice(0,6)
+            dispatch({ type: GET_EVENTS, payload: events })
             } else {
                 alert("Error fetching results");
             }

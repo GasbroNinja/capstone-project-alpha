@@ -5,8 +5,8 @@ import "../Home/home.css";
 const CardHome2 = ({ staffHome }) => {
   return (
     <>
-      <Col xs={12} lg={6} xl={6} xxl={4} className="p-0 px-3">
-        <Card className="cardLandingPage bg-dark text-white my-4 mx-2 flex-nowrap ">
+      <Col xs={4} lg={4} xl={4} xxl={4} className="px-5 cardSingleCol">
+        <Card className="cardLandingPage bg-dark text-white my-4 mx-2 flex-wrap cardSingleColSelect ">
           <Card.Img
             src={staffHome.img}
             alt="Redshift Sala"
@@ -47,8 +47,8 @@ const CardHome2 = ({ staffHome }) => {
                   xl={2}
                   className="text-center w-100"
                 >
-                  <Card.Text className="text-light fw-semibold text-center pt-3">
-                    Reddini
+                  <Card.Text className="text-light fw-semibold fst-italic fs-4 text-center pt-3">
+                    Socio
                   </Card.Text>
                 </Col>
               </div>

@@ -1,14 +1,23 @@
-import React from 'react'
-import { Card, Col, Row } from 'react-bootstrap';
-import "../Home/home.css"
+import React from "react";
+import { Button, Card, Col, Row } from "react-bootstrap";
+import "../Home/home.css";
 
-const CardHome = ({ cardsHome }) => {
+
+const CardEventsHome = ({ eventsHome }) => {
   return (
     <>
-      <Col xs={4} sm={4} md={4} lg={4} xl={4} xxl={4} className="px-5 px-xs-3 ms-5 cardSingleCol">
+      <Col
+        xs={2}
+        sm={2}
+        md={2}
+        lg={2}
+        xl={2}
+        xxl={2}
+        className="px-5 cardSingleCol"
+      >
         <Card className="cardLandingPage bg-dark text-white my-4 mx-2 flex-wrap cardSingleColSelect ">
           <Card.Img
-            src={cardsHome.img}
+            src={eventsHome.img}
             alt="Redshift Sala"
             className=" fixImgCardHome"
           />
@@ -24,7 +33,7 @@ const CardHome = ({ cardsHome }) => {
                   className="text-center w-100"
                 >
                   <Card.Title className="contentCard text-center fw-bold fs-1 pb-1">
-                    {cardsHome.title}
+                    {eventsHome.title}
                   </Card.Title>
                 </Col>
                 <Col
@@ -36,7 +45,7 @@ const CardHome = ({ cardsHome }) => {
                   className="text-center w-100"
                 >
                   <Card.Text className=" text-light fw-semibold text-center pb-2">
-                    {cardsHome.bio}
+                    {eventsHome.date} <br /> {eventsHome.ore}
                   </Card.Text>
                 </Col>
                 <Col
@@ -47,8 +56,22 @@ const CardHome = ({ cardsHome }) => {
                   xl={2}
                   className="text-center w-100"
                 >
-                  <Card.Text className=" text-light fw-semibold text-center pt-3">
-                    Reddini
+                  <Card.Text className="d-flex align-items-center justify-content-center flex-column text-light fw-semibold text-center pt-3">
+                    {}
+                    <a
+                      href={eventsHome.subscription}
+                      className=" text-decoration-none bg-secondary fs-5 rounded-2"
+                    >
+                      <Button
+                        variant="dark"
+                        className="btnNavOffcanv text-uppercase fs-5"
+                      >
+                        Iscriviti ✔
+                      </Button>
+                    </a>
+                    <br />
+                    {eventsHome.required} <br />
+                    {eventsHome.ingresso}
                   </Card.Text>
                 </Col>
               </div>
@@ -58,6 +81,6 @@ const CardHome = ({ cardsHome }) => {
       </Col>
     </>
   );
-}
+};
 
-export default CardHome
+export default CardEventsHome;

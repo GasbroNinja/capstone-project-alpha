@@ -8,7 +8,7 @@ import "../Home/home.css";
 const SecondSlideHome = () => {
   return (
     <>
-      <Animator animation={batch(MoveIn(500, -500), MoveOut(0, -1000))}>
+      <Animator animation={batch(MoveIn(0, -500), MoveOut(0, -1000))}>
         <Container className="d-flex flex-column justify-content-center align-items-center overflow-hidden">
           <div className="welcomePage backgroundText py-4 ">
             <div className="d-inline-flex flex-column justify-content-center my-2">
@@ -27,8 +27,8 @@ const SecondSlideHome = () => {
       >
         <Animator animation={batch(MoveIn(-2000, 0), MoveOut(0, -1000))}>
           <div
-            className="d-flex alignCards flex-nowrap"
-            style={{ overflowX: "scroll", overflowY: "hidden" }}
+            className="d-flex flex-wrap"
+            
           >
             <Row
               xs={1}

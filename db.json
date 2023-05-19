@@ -40,6 +40,71 @@
     "bio": "L'EROE DEI REDDINI"
   }
   ],
+  "eventi":[
+    {
+      "id":"1",
+      "title": "HearthStone BattleGrounds",
+      "img": "https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt5f1087725ac4713a/63095b549431257a8b3dfde5/HS_Esports_BG_LobbyLegends_Dark_V_Logo_enUS.png",
+      "date": "19/05/2023",
+      "ore":"Venerdì 21:00",
+      "subscription":"https://shorturl.at/ryT18",
+      "required":"tesseramento",
+      "ingresso":"3 €"
+    },
+        {
+      "id":"2",
+      "title": "Lupus in fabula",
+      "img": "https://ace73aa1d1.cbaul-cdnwnd.com/8ae0ba49c67123093ce36d4d8614180b/200000011-a5784a6710/logo%20fb%20big.jpg?ph=ace73aa1d1",
+      "date": "18/05/2023",
+      "ore":"Giovedì 21:30",
+      "subscription":"https://chat.whatsapp.com/DwQBevUTfZZ1OpE6Y0pUyWhttps://chat.whatsapp.com/DwQBevUTfZZ1OpE6Y0pUyW",
+      "required":"tesseramento",
+      "ingresso":"3 €"
+    },
+        {
+      "id":"3",
+      "title": "Yu-Gi-Oh Card Game Edison",
+      "img": "https://png.pngitem.com/pimgs/s/172-1722626_4thtcgen-zpsa403481d-yu-gi-oh-trading-card-game.png",
+      "date": "17/05/2023",
+      "ore":"Mercoledì 21:00",
+      "subscription":"",
+      "required":"tesseramento",
+      "ingresso":"3 €"
+    },
+        {
+      "id":"4",
+      "title": "Torneo Rocket League",
+      "img": "https://www.balloonshop.it/wp-content/uploads/2021/04/egs-rocketleague-psyonixllc-s3-2560x1440-56d55e752216.jpg",
+      "date": "19/05/2023",
+      "ore":"Venerdì 21:00",
+      "subscription":"https://shorturl.at/esAEP",
+      "required":"tesseramento",
+      "ingresso":"3 €"
+    },
+        {
+      "id":"5",
+      "title": "Torneo di Bang!",
+      "img": "https://www.migliorigiochi.eu/wp-content/uploads/2017/12/bang.jpg",
+      "date": "20/05/2023",
+      "ore":"Sabato 22:00",
+      "subscription":"https://shorturl.at/sxQ39",
+      "required":"tesseramento",
+      "ingresso":"3 €"
+    },
+        {
+      "id":"6",
+      "title": "TeamFight Tactics (TFT) Custom Games",
+      "img": "https://i0.wp.com/thegamehaus.com/wp-content/uploads/2021/09/TFT-Set-6.jpg?fit=771%2C465&ssl=1",
+      "date": "21/05/2023",
+      "ore":"Domenica 21:00",
+      "subscription":"https://shorturl.at/ryT18",
+      "required":"tesseramento",
+      "ingresso":"3 €"
+    }
+
+
+  ],
+
 
   "comments": [
     {

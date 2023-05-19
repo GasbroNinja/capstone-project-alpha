@@ -14,6 +14,8 @@ import FirstSlideHome from './FirstSlideHome';
 import SecondSlideHome from './SecondSlideHome';
 import "../Home/home.css"
 import Footer from '../Footer';
+import ThirdSlideHome from './ThirdSlideHome';
+
 
  // const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
  // const FadeUp = batch(Fade(), Move(), Sticky());
@@ -26,7 +28,11 @@ const Home = () => {
     <ScrollContainer>
       <ScrollPage page={0}>
         <Container fluid className="backGroundNeon1 p-0">
-          <Container fluid className="homeBase1 p-0">
+          <Container
+            fluid
+            className="homeBase1 p-0"
+            style={{ overflowY: "hidden" }}
+          >
             <Container
               fluid
               className=" d-flex align-items-center justify-content-start p-3"
@@ -40,25 +46,34 @@ const Home = () => {
       </ScrollPage>
 
       <Container fluid className="backGroundNeon1 p-0">
-        <Container fluid className="homeBase1 p-0">
+        <Container
+          fluid
+          className="homeBase1 p-0 "
+        >
           <ScrollPage page={1}>
-            <section>
+            
               <SecondSlideHome />
-            </section>
-            <div>
-              <Footer />
-            </div>
+            
           </ScrollPage>
         </Container>
       </Container>
-      {/* TERZA SLIDE HOME 
-      <Container fluid className="backGroundNeon1 p-0">
-        <Container fluid className="homeBase1 p-0">
+
+      <Container fluid className="backGroundNeon1 p-0 ">
+        <Container
+          fluid
+          className="homeBase1 p-0"
+          style={{ overflowY: "hidden" }}
+        >
           <ScrollPage page={2}>
-            <section></section>
+            <section>
+              <ThirdSlideHome />
+              <div className="">
+                <Footer />
+              </div>
+            </section>
           </ScrollPage>
         </Container>
-      </Container>*/}
+      </Container>
     </ScrollContainer>
   );
 }
