@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const EventsCards = ({ eventsHome }) => {
   return (
     <>
-    <Link to={`/event-detail/${props.id}`}>
+    <Link to={`/event-detail/${eventsHome.id}`}>
       <Col
         xs={2}
         sm={2}
