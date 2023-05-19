@@ -161,7 +161,7 @@ body {
 }
 
 .offcanvasStyle1{
-    background: transparent;
+    background: rgba(42, 42, 42, 0.7);
 
 }
 
@@ -177,7 +177,7 @@ body {
     background-image: url("../src/assets/images/bg-testo-forse-def.png");
     background-size: 250%;
     animation: bg-animation 5s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
-    text-shadow: 1px 5px 90px rgb(187, 187, 187);
+    text-shadow: 1px 5px 90px rgb(251, 159, 159);
 }
 
 .textCardLandingPage{

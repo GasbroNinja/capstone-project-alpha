@@ -1,0 +1,51 @@
+.html {
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    scroll-snap-align: start;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+
+}
+
+.html::-webkit-scrollbar {
+    width: 12px;
+}
+
+.html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 12px rgba(102, 46, 46, 0.491);
+    border-radius: 20px;
+
+}
+
+.html::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 6px rgba(240, 74, 74, 0.5);
+
+}
+
+.homeBase2 {
+    height: 100%;
+    background-image: url("../../assets/images/bg-definitivo-red.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.backGroundNeon2 {
+    height: 100%;
+    background-image: url("../../assets/images/bg-definitivo-red.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    scroll-snap-align: start;
+}

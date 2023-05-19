@@ -7,6 +7,7 @@ import Tesseramento from "./components/Tesseramento/Tesseramento";
 import Community from "./components/Community/Community";
 import Events from "./components/Eventi/Events";
 import Login from "./components/LoginForm";
+import EventDetail from "./components/Eventi/EventDetail";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/tesseramento" element={<Tesseramento />} />
         <Route path="/community" element={<Community />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/event-detail/:id" element={<EventDetail />} />
       </Routes>
     </BrowserRouter>
   );
