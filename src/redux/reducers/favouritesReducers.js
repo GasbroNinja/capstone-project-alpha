@@ -1,4 +1,4 @@
-/*import { ADD_TO_FAVOURITES, REMOVE_FROM_FAVOURITES } from "../actions";
+import { ADD_TO_FAVOURITES, REMOVE_FROM_FAVOURITES } from "../actions";
 
 const initialState = {
   content: []
@@ -15,7 +15,7 @@ const favouritesReducer = (state = initialState, action) => {
     case REMOVE_FROM_FAVOURITES:
       return {
         ...state,
-        content: state.content.filter((songs) => songs !== action.payload)
+        content: state.content.filter((events) => events !== action.payload)
       };
 
     default:
@@ -23,4 +23,4 @@ const favouritesReducer = (state = initialState, action) => {
   }
 };
 
-export default favouritesReducer;*/
+export default favouritesReducer;
