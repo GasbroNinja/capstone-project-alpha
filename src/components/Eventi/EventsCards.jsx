@@ -2,18 +2,20 @@
 import React from 'react'
 import { Card, Col, Row, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import "../Eventi/events.css"
 
-const EventsCards = ({ eventsHome }) => {
+
+const EventsCards = ({ eventsHome, props }) => {
   return (
     <>
     <Link to={`/event-detail/${eventsHome.id}`}>
       <Col
-        xs={2}
-        sm={2}
-        md={2}
-        lg={2}
-        xl={2}
-        xxl={2}
+        xs={1}
+        sm={1}
+        md={1}
+        lg={1}
+        xl={1}
+        xxl={1}
         className="px-5 cardSingleCol"
       >
         <Card className="cardLandingPage bg-dark text-white my-4 mx-2 flex-wrap cardSingleColSelect ">
