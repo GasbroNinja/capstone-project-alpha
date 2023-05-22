@@ -1,6 +1,10 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import NavbarMain from "../NavbarMain";
+import "../Community/community.css"
+import FirstSlideCommunity from "./FirstSlideCommunity";
+import Footer from "../Footer";
+
 
 const Community = () => {
   return (
@@ -12,6 +16,13 @@ const Community = () => {
         >
           <NavbarMain />
         </Container>
+
+        <section>
+          <FirstSlideCommunity />
+          <div className="fixed-bottom">
+            <Footer />
+          </div>
+        </section>
       </Container>
     </Container>
   );
