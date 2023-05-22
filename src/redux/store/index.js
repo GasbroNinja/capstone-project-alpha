@@ -4,11 +4,13 @@ import profile from '../reducers/loginReducer';
 import cardsStorage from "../reducers/cardHomeReducer";
 import favouritesReducer from "../reducers/favouritesReducers";
 import eventsStorage from "../reducers/eventsHomeReducer";
+import LadderHSStorage from "../reducers/communityLadderReducer";
 
 
 const rootReducer = combineReducers({
   cards : cardsStorage,
   eventi : eventsStorage,
+  ladderHS : LadderHSStorage,
   favourites: favouritesReducer,
   user: profile
 });

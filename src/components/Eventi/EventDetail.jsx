@@ -56,14 +56,14 @@ const EventDetail = () => {
         <Container className="d-flex align-items-center justify-content-center">
           <Row>
             <Col>
-              <Card className="cardLandingPage bg-dark text-white my-4 mx-2 flex-wrap cardSingleColSelect ">
+              <Card className="cardLandingPage1 bg-dark text-white my-4 mx-2 flex-wrap cardSingleColSelect1 ">
                 <Card.Img
                   src={eventDet.img}
                   alt="Redshift Sala"
-                  className=" fixImgCardHome"
+                  className=" fixImgCardHome1"
                 />
                 <Row className="d-xs-flex flex-column">
-                  <Card.ImgOverlay className="contentCard2 d-flex flex-column align-items-center justify-content-end border border-5 rounded-5 border-danger"></Card.ImgOverlay>
+                  <Card.ImgOverlay className="contentCard2bis d-flex flex-column align-items-center justify-content-end border border-5 rounded-5 border-danger"></Card.ImgOverlay>
                 </Row>
               </Card>
             </Col>
@@ -77,7 +77,7 @@ const EventDetail = () => {
                   xl={4}
                   className="text-center w-100"
                 >
-                  <Card.Title className="contentCard text-primary rounded-pill px-2 text-center fw-bold fs-1 pb-1">
+                  <Card.Title className="text-primary rounded-pill px-2 text-center fw-bold fs-1 pb-1">
                     {eventDet.title}
                   </Card.Title>
                 </Col>

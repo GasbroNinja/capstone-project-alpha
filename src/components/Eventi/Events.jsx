@@ -25,7 +25,7 @@ const Events = () => {
 
             <section>
               <FirstEventSlide />
-              <div className="">
+              <div className="fixed-bottom">
                 <Footer />
               </div>
             </section>

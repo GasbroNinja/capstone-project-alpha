@@ -105,3 +105,33 @@ export const getEventsHomeAction = () => {
 
     };
 };
+
+
+export const GET_LADDER_HEARTHSTONE = "GET_LADDER_HEARTHSTONE";
+
+export const getLadderHSAction = () => {
+    return async dispatch => {
+    const baseEndpoint = "http://localhost:3001/hearthstoneladder"
+    const HEADERS = {
+        headers: {
+           "Content-Type": "application/json; charset=utf-8",
+        }
+
+    }
+        try{
+            const response = await fetch(baseEndpoint, HEADERS)
+            if(response.ok) {
+            let ladderHS = await response.json();         
+            ladderHS = ladderHS.slice(0,1)
+            dispatch({ type: GET_LADDER_HEARTHSTONE, payload: ladderHS })
+            } else {
+                alert("Error fetching results");
+            }
+
+        } catch (error) {
+            console.log(error);
+        }
+
+
+    };
+};

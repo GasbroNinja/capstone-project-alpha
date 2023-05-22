@@ -101,10 +101,80 @@
       "required":"tesseramento",
       "ingresso":"3 €"
     }
-
-
   ],
 
+  "hearthstoneladder":[
+    {
+      "id": "1",
+      "displayName1": "Scipi",
+      "score1": "280🥇"
+    },
+    {
+      "id": "2",
+      "displayName2": "Gaab",
+      "score2": "250 🥈"
+    },
+    {
+      "id": "3",
+      "displayName3": "WhiteHell",
+      "score3": "210 🥉"
+    },
+    {
+      "id": "4",
+      "displayName4": "Seizan",
+      "score4": "190"
+    },
+    {
+      "id": "5",
+      "displayName5": "Holly",
+      "score5": "190"
+    },
+    {
+      "id": "6",
+      "displayName6": "WhiteRose",
+      "score6": "180"
+    },
+    {
+      "id": "7",
+      "displayName7": "Galandar",
+      "score7": "170"
+    },
+    {
+      "id": "8",
+      "displayName8": "Atan",
+      "score8": "170"
+    },
+    {
+      "id": "9",
+      "displayName9": "Acquamarina",
+      "score9": "150"
+    },
+    {
+      "id": "10",
+      "displayName10": "Femisi",
+      "score10": "150"
+    },
+    {
+      "id": "11",
+      "displayName11": "Susbi",
+      "score11": "100"
+    },
+    {
+      "id": "12",
+      "displayName12": "Noppy",
+      "score12": "100"
+    },
+    {
+      "id": "13",
+      "displayName13": "Artiom",
+      "score13": "80"
+    },
+    {
+      "id": "14",
+      "displayName14": "Spina",
+      "score14": "60"
+    }
+  ],
 
   "comments": [
     {

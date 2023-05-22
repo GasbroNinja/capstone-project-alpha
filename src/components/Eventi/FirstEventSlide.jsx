@@ -45,7 +45,7 @@ const FirstEventSlide = () => {
               lg={1}
               xl={1}
               xxl={1}
-              className="g-5 d-flex flex-nowrap align-items-center justify-content-center "
+              className="g-3 d-flex flex-nowrap align-items-center justify-content-center "
             >
               {eventsHome &&
                 eventsHome.map((eventsHome) => (
