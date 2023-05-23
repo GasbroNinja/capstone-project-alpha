@@ -39,12 +39,12 @@ const FirstEventSlide = () => {
             style={{ overflowX: "scroll", overflowY: "hidden" }}
           >
             <Row
-              xs={1}
-              sm={1}
-              md={1}
-              lg={1}
-              xl={1}
-              xxl={1}
+              xs={2}
+              sm={2}
+              md={2}
+              lg={2}
+              xl={2}
+              xxl={2}
               className="g-3 d-flex flex-nowrap align-items-center justify-content-center "
             >
               {eventsHome &&

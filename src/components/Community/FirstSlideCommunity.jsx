@@ -67,10 +67,10 @@ const FirstSlideCommunity = () => {
                 xxl={6}
                 className=""
               >
-                <Table striped bordered hover variant="dark" className="px-3">
+                <Table striped bordered hover variant="dark" className="px-5">
                   <thead>
                     <tr>
-                      <th colSpan={3} className="text-center fw-bold">
+                      <th colSpan={3} className="text-center fw-bold fs-3">
                         CLASSIFICHE HS TOURNAMENT 19/05/2023
                       </th>
                     </tr>
@@ -87,10 +87,10 @@ const FirstSlideCommunity = () => {
                 </Table>
               </Col>
               <Col xs={6} sm={6} md={6} lg={6} xl={6} xxl={6}>
-                <Table striped bordered hover variant="dark" className="px-3">
+                <Table striped bordered hover variant="dark" className="px-5">
                   <thead>
                     <tr>
-                      <th colSpan={3} className="text-center fw-bold">
+                      <th colSpan={3} className="text-center fw-bold fs-3">
                         CLASSIFICHE TFT TOURNAMENT 19/05/2023
                       </th>
                     </tr>

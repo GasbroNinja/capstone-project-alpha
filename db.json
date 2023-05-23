@@ -262,6 +262,12 @@
       "email": "gasbroider@gmail.it",
       "password": "1234",
       "id": 3
+    },
+    {
+      "username": "Hawkyra",
+      "email": "hawkyra@live.it",
+      "password": "123",
+      "id": 4
     }
   ]
 }

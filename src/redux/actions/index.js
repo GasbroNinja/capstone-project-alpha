@@ -152,7 +152,7 @@ export const getLadderTFTAction = () => {
             if(response.ok) {
             let ladderTFT = await response.json();         
             
-            dispatch({ type: GET_LADDER_HEARTHSTONE, payload: ladderTFT })
+            dispatch({ type: GET_LADDER_TFT, payload: ladderTFT })
             } else {
                 alert("Error fetching results");
             }

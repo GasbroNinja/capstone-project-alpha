@@ -8,8 +8,8 @@ import Footer from "../Footer";
 
 const Community = () => {
   return (
-    <Container fluid className="backGroundNeon p-0">
-      <Container fluid className="homeBase p-0">
+    <Container fluid className="backGroundNeon2 p-0">
+      <Container fluid className="homeBase2 p-0">
         <Container
           fluid
           className=" d-flex align-items-center justify-content-start p-3"

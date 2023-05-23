@@ -21,7 +21,7 @@ const SecondSlideHome = () => {
         </Container>
       </Animator>
 
-      <Container fluid className="d-lg-flex justify-content-center flex-wrap ">
+      <Container fluid className="">
         <Animator animation={batch(MoveIn(-2000, 0), MoveOut(0, -500))}>
           <div
             className="d-flex flex-nowrap  alignCards"

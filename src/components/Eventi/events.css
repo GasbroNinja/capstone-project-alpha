@@ -167,6 +167,7 @@ section {
     }
 
     .fixImgCardHome1 {
+        width: 700px;
         position: relative;
         height: 500px;
         object-fit: cover;
@@ -174,7 +175,8 @@ section {
         display: hidden;
         transform: scale(1) translateY(0px) translateX(0px);
         animation: bg-animation2 2s cubic-bezier(.46, .51, .86, .09);
-        animation-iteration-count: 1
+        animation-iteration-count: 1;
+        
     }
 
 }
@@ -182,22 +184,20 @@ section {
 @media screen and (min-width: 1400px) {
     .cardSingleCol1 {
         max-width: 2000px;
-        padding: 0 200px
+        padding: 0 100px
     }
 
 
 
     .cardSingleColSelect1 {
-        max-width: 500px;
-        transition: 1.5s;
-        max-width: 500px;
-        margin: 0 50px;
-        padding: 0 100px;
+        
+        max-width: 700px;
+
     }
 
     .cardSingleColSelect1:hover {
-        max-width: 600px;
-
+        width: 900px;
+        transition: 1.5s;
     }
 
 }
@@ -205,21 +205,22 @@ section {
 @media screen and (min-width: 1202px) and (max-width: 1399px) {
     .cardSingleCol1 {
         max-width: 1400px;
-        padding: 0 200px
+        
     }
 
 
 
     .cardSingleColSelect1 {
         max-width: 500px;
+        
+        
 
     }
 
     .cardSingleColSelect1:hover {
         transition: 1.5s;
-        max-width: 500px;
-        margin: 0 50px;
-        padding: 0 100px;
+        max-width: 800px;
+
     }
 
 }
@@ -240,8 +241,7 @@ section {
     .cardSingleColSelect1:hover {
         transition: 1.5s;
         max-width: 400px;
-        margin: 0 50px;
-        padding: 0 60px;
+
     }
 
 }
@@ -255,15 +255,14 @@ section {
 
 
     .cardSingleColSelect1 {
-        max-width: 300px;
+        max-width: 420px;
         height: 100%;
     }
 
     .cardSingleColSelect1:hover {
         transition: 1.5s;
-        max-width: 400px;
-        margin: 0 50px;
-        padding: 0 60px;
+        max-width: 320px;
+
     }
 }
 

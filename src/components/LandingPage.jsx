@@ -82,7 +82,7 @@ const LandingPage = () => {
               ))}
             </Row>
           </div>
-          <div className="sticky-bottom ">
+          <div className="">
             <Footer />
           </div>
         </Container>

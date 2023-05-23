@@ -10,22 +10,22 @@ const EventsCards = ({ eventsHome, props }) => {
     <>
       <Link
         to={`/event-detail/${eventsHome.id}`}
-        className="CardSingleCol cardSingleColSelect px-5 mx-5 "
+        className="CardSingleCol1 cardSingleColSelect1 px-5 mx-5 "
       >
         <Col
-          xs={1}
-          sm={1}
-          md={1}
-          lg={1}
-          xl={1}
-          xxl={1}
-          className="px-5 cardSingleCol"
+          xs={2}
+          sm={2}
+          md={2}
+          lg={2}
+          xl={2}
+          xxl={2}
+          className="px-5 cardSingleCol1"
         >
-          <Card className="cardLandingPage bg-dark text-white my-4 mx-2 flex-wrap cardSingleColSelect ">
+          <Card className="cardLandingPage bg-dark text-white my-4 mx-2 flex-wrap cardSingleColSelect1 ">
             <Card.Img
               src={eventsHome.img}
               alt="Redshift Sala"
-              className=" fixImgCardHome"
+              className=" fixImgCardHome1"
             />
             <Row className="d-xs-flex flex-column">
               <Card.ImgOverlay className="contentCard2 d-flex flex-column align-items-center justify-content-end border border-5 rounded-5 border-danger">
