@@ -24,7 +24,7 @@ const NavbarMain = ({ ...props }) => {
         <Button
           variant="dark"
           onClick={toggleShow}
-          className=" me-sm-2 d-flex align-items-center justify-content-top px-3 px-sm-0 px-md-3"
+          className=" me-sm-2 d-flex align-items-center justify-content-top px-2 px-sm-3"
         >
           <h2 className="btnNavOffcanv text-danger fs-2 pe-3 pt-1">RED</h2>
           <ImArrowDown className="arrowbtnNavOffcanv fs-2"></ImArrowDown>

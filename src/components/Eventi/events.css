@@ -41,7 +41,7 @@ section {
 
 }
 .homeBase3 {
-    height: 100%;
+    height: 100vh;
     background-image: url("../../assets/images/bg-definitivo-red.png");
     background-position: top;
     background-repeat: no-repeat;

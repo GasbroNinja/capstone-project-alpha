@@ -132,7 +132,7 @@ section{
     text-align: center;
     color: rgb(182, 43, 43);
     text-shadow: 2px 2px 22px rgb(130, 103, 103);
-    background: rgba(0, 0, 0, 0.9);
+    
     transition: 1s;
     letter-spacing: 1.5px;
     transform: scale(1.1) translateY(-30px) translateX(0px);
@@ -151,6 +151,7 @@ section{
         width: auto;
         color: rgb(255, 77, 0);
         letter-spacing: 2px;
+        
     }
 
 .contentCard2 {
@@ -188,7 +189,7 @@ section{
 
 .cardLandingPage {
     max-width: 500px;
-    max-height: 500px;
+    height: 500px;
     box-shadow: 3px 3px 20px 0px rgb(47, 1, 1);
     border-radius: 50px;
     padding: auto;

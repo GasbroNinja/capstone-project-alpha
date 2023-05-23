@@ -1,11 +1,9 @@
 import React from 'react'
-import "../App.css"
 import { Card, Col, Container, Row, } from 'react-bootstrap';
-
 import sfondoCard1 from "../assets/images/hogwarts-legacy-3840x2160-10410.jpg";
 import NavbarMain from './NavbarMain';
-
 import Footer from './Footer';
+import "../App.css"
 
 const LandingPage = () => {
 
@@ -15,7 +13,7 @@ const LandingPage = () => {
   return (
     <Container fluid className="homeBase4 p-0">
       <Container fluid className="backGroundNeon p-0 overflow-y-hidden">
-        <Container fluid className="homeBase p-0">
+        <Container fluid className="homeBase1 p-0">
           <Container
             fluid
             className=" d-flex align-items-center justify-content-start p-3"
