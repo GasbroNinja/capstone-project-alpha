@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
-import { Container, Row, Table } from 'react-bootstrap';
+import { Col, Container, Row, Table } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { Animator, MoveOut } from 'react-scroll-motion';
-import { getLadderHSAction } from '../../redux/actions';
+import { getLadderHSAction, getLadderTFTAction } from '../../redux/actions';
 import LadderHsTable from './LadderHsTable';
+import LadderTftTable from './LadderTFTTable';
 
 const FirstSlideCommunity = () => {
 
@@ -16,6 +17,19 @@ const FirstSlideCommunity = () => {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
+
+    const dispatch2 = useDispatch();
+    const ladderTFTCommunity = useSelector(
+      (state) => state.ladderTFT.content
+    );
+    console.log(ladderTFTCommunity);
+
+    useEffect(() => {
+      dispatch2(getLadderTFTAction());
+
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
 
   return (
     <>
@@ -32,33 +46,66 @@ const FirstSlideCommunity = () => {
           </div>
         </Container>
       </Animator>
-      <Container fluid className=" justify-content-center flex-nowrap ">
+      <Container className="p-0">
         <Animator animation={MoveOut(2000, 0)}>
-          <div
-            className=""
-          >
+          <div className="m-5 pb-5">
             <Row
-              xs={1}
-              sm={1}
-              md={1}
-              lg={1}
-              xl={1}
-              xxl={1}
-              className="g-3 d-flex align-items-center justify-content-center "
+              xs={6}
+              sm={6}
+              md={6}
+              lg={6}
+              xl={6}
+              xxl={6}
+              className="d-flex align-items-center justify-content-between "
             >
-                <Table striped bordered hover variant="dark">
-                    <thead>
+              <Col
+                xs={6}
+                sm={6}
+                md={6}
+                lg={6}
+                xl={6}
+                xxl={6}
+                className=""
+              >
+                <Table striped bordered hover variant="dark" className="px-3">
+                  <thead>
                     <tr>
-                        <th colSpan={3} className='text-center fw-bold'>CLASSIFICHE HS TOURNAMENT 19/05/2023</th>
+                      <th colSpan={3} className="text-center fw-bold">
+                        CLASSIFICHE HS TOURNAMENT 19/05/2023
+                      </th>
                     </tr>
-                    </thead>
-                        <tbody>
-                     {ladderHSCommunity &&
-                        ladderHSCommunity.map((ladderHSCommunity) => (
-                        <LadderHsTable key={ladderHSCommunity.id} ladderHSCommunity={ladderHSCommunity} />
-                        ))}
-                        </tbody>
+                  </thead>
+                  <tbody>
+                    {ladderHSCommunity &&
+                      ladderHSCommunity.map((ladderHSCommunity) => (
+                        <LadderHsTable
+                          key={ladderHSCommunity.id}
+                          ladderHSCommunity={ladderHSCommunity}
+                        />
+                      ))}
+                  </tbody>
                 </Table>
+              </Col>
+              <Col xs={6} sm={6} md={6} lg={6} xl={6} xxl={6}>
+                <Table striped bordered hover variant="dark" className="px-3">
+                  <thead>
+                    <tr>
+                      <th colSpan={3} className="text-center fw-bold">
+                        CLASSIFICHE TFT TOURNAMENT 19/05/2023
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {ladderTFTCommunity &&
+                      ladderTFTCommunity.map((ladderTFTCommunity) => (
+                        <LadderTftTable
+                          key={ladderTFTCommunity.id}
+                          ladderTFTCommunity={ladderTFTCommunity}
+                        />
+                      ))}
+                  </tbody>
+                </Table>
+              </Col>
             </Row>
           </div>
         </Animator>

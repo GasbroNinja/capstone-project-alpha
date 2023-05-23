@@ -1,24 +1,7 @@
 import React, { useState } from "react";
 import { Container, Button, Form } from "react-bootstrap";
-import { Navigate, useNavigate } from "react-router-dom";
-import {
-  Animator,
-  ScrollContainer,
-  ScrollPage,
-  batch,
-  Fade,
-  FadeIn,
-  FadeOut,
-  Move,
-  MoveIn,
-  MoveOut,
-  Sticky,
-  StickyIn,
-  StickyOut,
-  Zoom,
-  ZoomIn,
-  ZoomOut,
-} from "react-scroll-motion";
+import { useNavigate } from "react-router-dom";
+
 import Footer from "./Footer";
 import NavbarMain from "./NavbarMain";
 import "../App.css";
@@ -82,7 +65,7 @@ export default function Login() {
             </Form.Group>
             <div className="d-flex align-items-center justify-content-center">
               <Button
-                className=" py-2"
+                className="py-2"
                 block
                 size="lg"
                 type="submit"
@@ -91,6 +74,15 @@ export default function Login() {
                 onClick={() => navigate("/home")}
               >
                 Login
+              </Button>
+              <Button
+                className="py-2 px-2 ms-3"
+                size="lg"
+                type="submit"
+                variant="danger"
+                onClick={() => navigate("/register")}
+              >
+                Sign up
               </Button>
             </div>
           </Form>

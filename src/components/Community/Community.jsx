@@ -19,7 +19,7 @@ const Community = () => {
 
         <section>
           <FirstSlideCommunity />
-          <div className="fixed-bottom">
+          <div className="">
             <Footer />
           </div>
         </section>

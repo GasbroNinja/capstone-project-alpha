@@ -40,7 +40,7 @@ body {
 
 
 .backGroundNeon{
-    height: 100%;
+    height: 100vh;
     background-image: url("../src/assets/images/bg-definitivo-red.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -53,11 +53,21 @@ body {
 
 
 .homeBase{
-    height: 100%;
+    height: 100vh;
     background-image: url("../src/assets/images/bg-definitivo-red.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover ;
+    scroll-snap-align: start;
+    
+}
+
+.homeBase4{
+    height: 100%;
+    background-image: url("../src/assets/images/bg-definitivo-red.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     scroll-snap-align: start;
     
 }
@@ -257,14 +267,14 @@ body {
 @media screen and (max-width: 576px) {
     .ImgResponsivenessLP {
         width: 100%;
-        height: 600px;
+        height: 500px;
         border-radius: 50px;
         object-fit: cover;
     }
     .cardLandingPage {
             margin: 0 16px;
-            max-width: 400px;
-            height: 600px;
+            max-width: 500px;
+            height: 500px;
             box-shadow: 3px 3px 20px 0px rgb(47, 1, 1);
             border-radius: 50px;
             padding: auto;
@@ -272,10 +282,12 @@ body {
     .cardImgLandingPage {
         padding: 0 0px;
         display: hidden;
-        max-width: 400px;
+        max-width: 500px;
         height: 300px;
         transform: scale(0.8);
         animation: cardAnimationLand 5s 1 cubic-bezier(0.215, 0.610, 0.355, 1);
+        text-align: center;
+        margin-top: 50px;
     }
     
 }
@@ -291,7 +303,7 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    background-image: url("../src/assets/images/sfondocard-white-orange.png");
+    background-image: url("../src/assets/images/bg-redshift-editable.png");
     background-size: 220%;
     animation: bg-animation 7s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
     text-shadow: 1px 5px 90px rgb(199, 199, 199);
@@ -307,7 +319,7 @@ body {
     
         .cardLandingPage {
             margin: 0 16px;
-            min-width: 500px;
+            min-width: 700px;
             height: 500px;
             box-shadow: 3px 3px 20px 0px rgb(47, 1, 1);
             display: flex;
@@ -319,8 +331,8 @@ body {
             
             
             display: hidden;
-            width: 500px;
-            height: 300px;
+            width: 700px;
+            height: 500px;
             transform: scale(0.5);
             animation: cardAnimationLand 5s 1 cubic-bezier(0.215, 0.610, 0.355, 1);
         }
@@ -334,56 +346,58 @@ body {
             background-clip: text;
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
-            background-image: url("../src/assets/images/sfondocard-white-orange.png");
+            background-image: url("../src/assets/images/bg-redshift-editable.png");
             background-size: 220%;
             animation: bg-animation 7s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
             text-shadow: 1px 5px 90px rgb(199, 199, 199);
+            text-align: center;
         }
 
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
     .ImgResponsivenessLP {
-        width: 100%;
-        height: 100%;
-        border-radius: 50px;
-        object-fit: cover;
-    }
-
-    .cardLandingPage {
-        margin: 0 16px;
-        width: 900px;
-        height: 500px;
-        box-shadow: 3px 3px 20px 0px rgb(47, 1, 1);
-        border-radius: 50px;
-        padding: auto;
-    }
-
-    .cardImgLandingPage {
-        padding: auto;
-        display: hidden;
-        width: 100%;
-        height: 500px;
-        transform: scale(1);
-        animation: cardAnimationLand 5s 1 cubic-bezier(0.215, 0.610, 0.355, 1);
-    }
-
-    .textCardBio {
-        width: 100%;
-        font-family: 'Rubik', sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        letter-spacing: 1.5px;
-        color: transparent;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        background-image: url("../src/assets/images/sfondocard-white-orange.png");
-        background-size: 220%;
-        animation: bg-animation 7s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
-        text-shadow: 1px 5px 90px rgb(199, 199, 199);
-    }
-
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+    
+        }
+    
+        .cardLandingPage {
+            margin: 0 16px;
+            min-width: 700px;
+            height: 500px;
+            box-shadow: 3px 3px 20px 0px rgb(47, 1, 1);
+            display: flex;
+            align-items: center;
+            padding: auto;
+        }
+    
+        .cardImgLandingPage {
+    
+    
+            display: hidden;
+            width: 700px;
+            height: 500px;
+            transform: scale(0.5);
+            animation: cardAnimationLand 5s 1 cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+    
+        .textCardBio {
+            font-family: 'Rubik', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 1.5px;
+            color: transparent;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-image: url("../src/assets/images/bg-redshift-editable.png");
+            background-size: 220%;
+            animation: bg-animation 7s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
+            text-shadow: 1px 5px 90px rgb(199, 199, 199);
+            text-align: center;
+        }
 }
 
 

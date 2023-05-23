@@ -21,14 +21,11 @@ const SecondSlideHome = () => {
         </Container>
       </Animator>
 
-      <Container
-        fluid
-        className="d-lg-flex justify-content-center flex-nowrap "
-      >
-        <Animator animation={batch(MoveIn(-2000, 0), MoveOut(0, -1000))}>
+      <Container fluid className="d-lg-flex justify-content-center flex-wrap ">
+        <Animator animation={batch(MoveIn(-2000, 0), MoveOut(0, -500))}>
           <div
-            className="d-flex flex-wrap"
-            
+            className="d-flex flex-nowrap  alignCards"
+            style={{ overflowX: "scroll", overflowY: "hidden" }}
           >
             <Row
               xs={1}
@@ -36,7 +33,7 @@ const SecondSlideHome = () => {
               md={1}
               lg={1}
               xl={1}
-              className=" g-2 d-flex flex-nowrap justify-content-center align-items-center"
+              className="g-3 d-flex flex-nowrap align-items-center justify-content-center"
             >
               {staffHome &&
                 staffHome.map((staffHome) => (

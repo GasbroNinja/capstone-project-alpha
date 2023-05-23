@@ -5,7 +5,15 @@ import "../Home/home.css";
 const CardHome2 = ({ staffHome }) => {
   return (
     <>
-      <Col xs={4} lg={4} xl={4} xxl={4} className="px-5 cardSingleCol">
+      <Col
+        xs={4}
+        sm={4}
+        md={4}
+        lg={4}
+        xl={4}
+        xxl={4}
+        className="px-5 cardSingleCol"
+      >
         <Card className="cardLandingPage bg-dark text-white my-4 mx-2 flex-wrap cardSingleColSelect ">
           <Card.Img
             src={staffHome.img}

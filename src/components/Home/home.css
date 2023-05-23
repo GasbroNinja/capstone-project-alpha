@@ -141,22 +141,50 @@ section{
 
      
 @media screen and (max-width: 576px){
-    .contentCard2 {
+    .contentCard2:hover {
         width: auto;
-
+        color: rgb(255, 77, 0);
     }
 }
 
+    .contentCard2:hover {
+        width: auto;
+        color: rgb(255, 77, 0);
+        letter-spacing: 2px;
+    }
 
-
-.contentCard2:hover {
+.contentCard2 {
     text-align: center;
     color: rgb(255, 190, 190);
     text-shadow: 2px 2px 22px rgb(130, 103, 103);
-    background: rgba(22, 16, 16, 0.8);
+    background: rgba(22, 16, 16, 0.564);
     transition: 1s;
 
 }
+
+@media screen and (max-width: 576px) {
+    .contentCard3:hover {
+        width: auto;
+        color: rgb(255, 77, 0);
+    }
+}
+
+.contentCard3:hover {
+    width: auto;
+    color: rgb(255, 77, 0);
+    
+}
+
+.contentCard3 {
+    text-align: center;
+    color: rgb(255, 190, 190);
+    text-shadow: 2px 2px 22px rgb(130, 103, 103);
+    background: rgba(22, 16, 16, 0.564);
+    transition: 1s;
+
+}
+
+
 
 .cardLandingPage {
     max-width: 500px;

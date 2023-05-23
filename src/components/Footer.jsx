@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <Container fluid className=" text-center text-md-left mt-5">
+    <Container fluid className=" text-center text-md-left mt-5 pt-5">
       <div>
         <Row className="d-lg-flex flex-xl-row  align-items-center justify-content-center flex-column">
-          <Col md={6} className="mt-md-0 mt-3">
+          <Col md={6} className="mt-md-0 mt-3 pb-3">
             <h5 className="text-uppercase FooterText bgFooterText text-start m-0 p-0 fs-6">
               REDSHIFT GAMING ©
             </h5>
@@ -22,12 +22,12 @@ const Footer = () => {
 
           <hr className="clearfix w-100 d-md-none pb-0" />
 
-          <div className="col-md-3 mb-md-0 mb-3">
-            <h5 className="text-uppercase FooterText bgFooterText fs-6 m-0 p-0">
+          <div className="col-md-3 mb-md-0 mb-3 pb-3">
+            <h5 className="text-uppercase FooterText bgFooterText fs-6 m-0 p-0 pb-2">
               Social
             </h5>
             <ul className="list-unstyled">
-              <li className="text-decoration-none pb-2">
+              <li className="text-decoration-none py-2">
                 <Button variant="outline-danger">
                   <a
                     href="https://www.instagram.com/redshift_gaming/"
@@ -51,14 +51,14 @@ const Footer = () => {
           </div>
 
           <div className="col-md-3 mb-md-0 mb-3">
-            <h5 className="text-uppercase FooterText bgFooterText m-0 p-0">
-              Collegamenti
+            <h5 className="text-uppercase FooterText bgFooterText m-0 p-0 pb-2">
+              LINKS PAGE
             </h5>
             <ul className="list-unstyled">
               <li>
                 <Link
                   to="/home"
-                  className="text-uppercase FooterText bgFooterText m-0 py-1"
+                  className="text-uppercase FooterText bgFooterText m-0 py-2"
                 >
                   HOME
                 </Link>
@@ -66,7 +66,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/tesseramento"
-                  className="text-uppercase FooterText bgFooterText m-0 py-1"
+                  className="text-uppercase FooterText bgFooterText m-0 py-2"
                 >
                   TESSERAMENTO
                 </Link>
@@ -74,7 +74,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/community"
-                  className="text-uppercase FooterText bgFooterText m-0 py-1"
+                  className="text-uppercase FooterText bgFooterText m-0 py-2"
                 >
                   COMMUNITY
                 </Link>

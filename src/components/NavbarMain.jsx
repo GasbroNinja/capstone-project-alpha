@@ -19,12 +19,12 @@ const NavbarMain = ({ ...props }) => {
     <>
       <Container
         fluid
-        className="d-flex justify-content-between align-items-center"
+        className="d-flex justify-content-between align-items-center p-0"
       >
         <Button
           variant="dark"
           onClick={toggleShow}
-          className=" me-2 d-flex align-items-center justify-content-top px-3"
+          className=" me-sm-2 d-flex align-items-center justify-content-top px-3 px-sm-0 px-md-3"
         >
           <h2 className="btnNavOffcanv text-danger fs-2 pe-3 pt-1">RED</h2>
           <ImArrowDown className="arrowbtnNavOffcanv fs-2"></ImArrowDown>
@@ -85,7 +85,7 @@ const NavbarMain = ({ ...props }) => {
             <img
               src={logoredshift}
               alt="logo-redshift"
-              className="logoRedshift"
+              className="logoRedshift mx-3"
             />
           </Link>
         </div>

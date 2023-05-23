@@ -1,14 +1,9 @@
 import React from 'react'
 import { Container } from 'react-bootstrap';
 import NavbarMain from '../NavbarMain';
-
 import {
-  Animator,
   ScrollContainer,
   ScrollPage,
-  Sticky,
-  StickyIn,
-  batch,
 } from "react-scroll-motion";
 import FirstSlideHome from './FirstSlideHome';
 import SecondSlideHome from './SecondSlideHome';

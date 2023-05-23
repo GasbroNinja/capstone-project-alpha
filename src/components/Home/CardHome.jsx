@@ -5,7 +5,15 @@ import "../Home/home.css"
 const CardHome = ({ cardsHome }) => {
   return (
     <>
-      <Col xs={4} sm={4} md={4} lg={4} xl={4} xxl={4} className="px-5 px-xs-3 ms-5 cardSingleCol">
+      <Col
+        xs={4}
+        sm={4}
+        md={4}
+        lg={4}
+        xl={4}
+        xxl={4}
+        className="px-5 px-xs-3 ms-5 cardSingleCol"
+      >
         <Card className="cardLandingPage bg-dark text-white my-4 mx-2 flex-wrap cardSingleColSelect ">
           <Card.Img
             src={cardsHome.img}
@@ -13,7 +21,7 @@ const CardHome = ({ cardsHome }) => {
             className=" fixImgCardHome"
           />
           <Row className="d-xs-flex flex-column">
-            <Card.ImgOverlay className="contentCard2 d-flex flex-column align-items-center justify-content-end border border-5 rounded-5 border-danger">
+            <Card.ImgOverlay className="contentCard3 d-flex flex-column align-items-center justify-content-end border border-5 rounded-5 border-danger">
               <div className="">
                 <Col
                   xs={12}

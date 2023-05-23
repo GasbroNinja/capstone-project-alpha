@@ -1,181 +1,226 @@
 {
   "cardshome": [
-  {
-    "id": "1",
-    "title": "GAMING",
-    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/57/b7/5e/postazioni-pc-gaming.jpg?w=1200&h=1200&s=1",
-    "bio": "Gioca e scarica il tuo gioco preferito e giocalo con i nostri PC e Console"
-  },
-  {
-    "id": "2",
-    "title": "TORNEI",
-    "img": "https://cdn-az.allevents.in/events5/banners/8e9bbb57b79f98669387cd546ac8e0a1f6110f4d6ecb2ab86dc7b0ea6359721b-rimg-w1200-h890-gmir.jpg?v=1681314193",
-     "bio": "Partecipa ai nostri Tornei mensili e settimanali, per i Vincitori sono garantiti dei Premi nell'ambito del Gaming"
-  },
-    {
-    "id": "3",
-    "title": "SESSIONI GDR",
-    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/57/da/d3/taverna-per-giochi-da.jpg?w=1200&h=-1&s=1",
-    "bio": "Armati di matite e dadi e parti per un Viaggio incredibile"
-  }
-  ],
-  "staff": [
-
-  {
-    "id": "1",
-    "title": "Dario Germanà AKA 'ZOCK' ",
-    "img": "https://i.ibb.co/DRp79fv/1973731-10203502768958727-1431382917-o.jpg",
-    "bio": "IL PRESIDENTE"
-  },
-  {
-    "id": "2",
-    "title": "Roberto Zappia AKA 'ZIPPO'",
-    "img": "https://media.licdn.com/dms/image/C5603AQERGLSbK6bJ1Q/profile-displayphoto-shrink_800_800/0/1631008955604?e=2147483647&v=beta&t=U8sxibjVNlDojZ4ia4-YGt7j9BhvQtiNTPfRMuPeRt4",
-     "bio": "L'ESPORTS CASTER"
-  },
-    {
-    "id": "3",
-    "title": "Emanuele Minissale AKA 'MANU'",
-    "img": "https://i.ibb.co/9r4qBq8/54436458-10218486447576996-1834938856395243520-n.jpg",
-    "bio": "L'EROE DEI REDDINI"
-  }
-  ],
-  "eventi":[
-    {
-      "id":"1",
-      "title": "HearthStone BattleGrounds",
-      "img": "https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt5f1087725ac4713a/63095b549431257a8b3dfde5/HS_Esports_BG_LobbyLegends_Dark_V_Logo_enUS.png",
-      "date": "19/05/2023",
-      "ore":"Venerdì 21:00",
-      "subscription":"https://shorturl.at/ryT18",
-      "required":"tesseramento",
-      "ingresso":"3 €"
-    },
-        {
-      "id":"2",
-      "title": "Lupus in fabula",
-      "img": "https://ace73aa1d1.cbaul-cdnwnd.com/8ae0ba49c67123093ce36d4d8614180b/200000011-a5784a6710/logo%20fb%20big.jpg?ph=ace73aa1d1",
-      "date": "18/05/2023",
-      "ore":"Giovedì 21:30",
-      "subscription":"https://chat.whatsapp.com/DwQBevUTfZZ1OpE6Y0pUyWhttps://chat.whatsapp.com/DwQBevUTfZZ1OpE6Y0pUyW",
-      "required":"tesseramento",
-      "ingresso":"3 €"
-    },
-        {
-      "id":"3",
-      "title": "Yu-Gi-Oh Card Game Edison",
-      "img": "https://png.pngitem.com/pimgs/s/172-1722626_4thtcgen-zpsa403481d-yu-gi-oh-trading-card-game.png",
-      "date": "17/05/2023",
-      "ore":"Mercoledì 21:00",
-      "subscription":"",
-      "required":"tesseramento",
-      "ingresso":"3 €"
-    },
-        {
-      "id":"4",
-      "title": "Torneo Rocket League",
-      "img": "https://www.balloonshop.it/wp-content/uploads/2021/04/egs-rocketleague-psyonixllc-s3-2560x1440-56d55e752216.jpg",
-      "date": "19/05/2023",
-      "ore":"Venerdì 21:00",
-      "subscription":"https://shorturl.at/esAEP",
-      "required":"tesseramento",
-      "ingresso":"3 €"
-    },
-        {
-      "id":"5",
-      "title": "Torneo di Bang!",
-      "img": "https://www.migliorigiochi.eu/wp-content/uploads/2017/12/bang.jpg",
-      "date": "20/05/2023",
-      "ore":"Sabato 22:00",
-      "subscription":"https://shorturl.at/sxQ39",
-      "required":"tesseramento",
-      "ingresso":"3 €"
-    },
-        {
-      "id":"6",
-      "title": "TeamFight Tactics (TFT) Custom Games",
-      "img": "https://i0.wp.com/thegamehaus.com/wp-content/uploads/2021/09/TFT-Set-6.jpg?fit=771%2C465&ssl=1",
-      "date": "21/05/2023",
-      "ore":"Domenica 21:00",
-      "subscription":"https://shorturl.at/ryT18",
-      "required":"tesseramento",
-      "ingresso":"3 €"
-    }
-  ],
-
-  "hearthstoneladder":[
     {
       "id": "1",
-      "displayName1": "Scipi",
-      "score1": "280🥇"
+      "title": "GAMING",
+      "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/57/b7/5e/postazioni-pc-gaming.jpg?w=1200&h=1200&s=1",
+      "bio": "Gioca e scarica il tuo gioco preferito e giocalo con i nostri PC e Console"
     },
     {
       "id": "2",
-      "displayName2": "Gaab",
-      "score2": "250 🥈"
+      "title": "TORNEI",
+      "img": "https://cdn-az.allevents.in/events5/banners/8e9bbb57b79f98669387cd546ac8e0a1f6110f4d6ecb2ab86dc7b0ea6359721b-rimg-w1200-h890-gmir.jpg?v=1681314193",
+      "bio": "Partecipa ai nostri Tornei mensili e settimanali, per i Vincitori sono garantiti dei Premi nell'ambito del Gaming"
     },
     {
       "id": "3",
-      "displayName3": "WhiteHell",
-      "score3": "210 🥉"
+      "title": "SESSIONI GDR",
+      "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/57/da/d3/taverna-per-giochi-da.jpg?w=1200&h=-1&s=1",
+      "bio": "Armati di matite e dadi e parti per un Viaggio incredibile"
+    }
+  ],
+  "staff": [
+    {
+      "id": "1",
+      "title": "Dario Germanà AKA 'ZOCK' ",
+      "img": "https://i.ibb.co/DRp79fv/1973731-10203502768958727-1431382917-o.jpg",
+      "bio": "IL PRESIDENTE"
+    },
+    {
+      "id": "2",
+      "title": "Roberto Zappia AKA 'ZIPPO'",
+      "img": "https://media.licdn.com/dms/image/C5603AQERGLSbK6bJ1Q/profile-displayphoto-shrink_800_800/0/1631008955604?e=2147483647&v=beta&t=U8sxibjVNlDojZ4ia4-YGt7j9BhvQtiNTPfRMuPeRt4",
+      "bio": "L'ESPORTS CASTER"
+    },
+    {
+      "id": "3",
+      "title": "Emanuele Minissale AKA 'MANU'",
+      "img": "https://i.ibb.co/9r4qBq8/54436458-10218486447576996-1834938856395243520-n.jpg",
+      "bio": "L'EROE DEI REDDINI"
+    }
+  ],
+  "eventi": [
+    {
+      "id": "1",
+      "title": "HearthStone BattleGrounds",
+      "img": "https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt5f1087725ac4713a/63095b549431257a8b3dfde5/HS_Esports_BG_LobbyLegends_Dark_V_Logo_enUS.png",
+      "date": "19/05/2023",
+      "ore": "Venerdì 21:00",
+      "subscription": "https://shorturl.at/ryT18",
+      "required": "tesseramento",
+      "ingresso": "3 €",
+      "bio": "Arriva l'unico e solo Hearthstone - Bayylegrounds Holly Destroy Tournament questa sera alle ore 21:00 il costo d'iscrizione è di 5 euro e la via della gloria è proprio davanti a te, non fare il murloc ci vediamo questa sera in sala 🔥🔥🔥"
+    },
+    {
+      "id": "2",
+      "title": "Lupus in fabula",
+      "img": "https://ace73aa1d1.cbaul-cdnwnd.com/8ae0ba49c67123093ce36d4d8614180b/200000011-a5784a6710/logo%20fb%20big.jpg?ph=ace73aa1d1",
+      "date": "18/05/2023",
+      "ore": "Giovedì 21:30",
+      "subscription": "https://chat.whatsapp.com/DwQBevUTfZZ1OpE6Y0pUyWhttps://chat.whatsapp.com/DwQBevUTfZZ1OpE6Y0pUyW",
+      "required": "tesseramento",
+      "ingresso": "3 €",
+      "bio": "Questa sera a partire dalle 21:30 va in scena in sala il gioco di comitato più amato di sempre Lupus in fabula ma attenzione questa sera giocheremo la sua variante a tema Harry Potter."
+    },
+    {
+      "id": "3",
+      "title": "Yu-Gi-Oh Card Game Edison",
+      "img": "https://png.pngitem.com/pimgs/s/172-1722626_4thtcgen-zpsa403481d-yu-gi-oh-trading-card-game.png",
+      "date": "17/05/2023",
+      "ore": "Mercoledì 21:00",
+      "subscription": "",
+      "required": "tesseramento",
+      "ingresso": "3 €",
+      "bio": "Vi ricordo che anche questo mercoledì alle 21:00 si svolgerà il torneo di Yu-Gi-Oh in formato Edison! 🔥🃏"
     },
     {
       "id": "4",
-      "displayName4": "Seizan",
-      "score4": "190"
+      "title": "Torneo Rocket League",
+      "img": "https://www.balloonshop.it/wp-content/uploads/2021/04/egs-rocketleague-psyonixllc-s3-2560x1440-56d55e752216.jpg",
+      "date": "19/05/2023",
+      "ore": "Venerdì 21:00",
+      "subscription": "https://shorturl.at/esAEP",
+      "required": "tesseramento",
+      "ingresso": "3 €",
+      "bio": "Questa domenica ti aspetta il calcio che conta... quello con le macchine di RocketLeague alle ore 21:00!"
     },
     {
       "id": "5",
-      "displayName5": "Holly",
-      "score5": "190"
+      "title": "Torneo di Bang!",
+      "img": "https://www.migliorigiochi.eu/wp-content/uploads/2017/12/bang.jpg",
+      "date": "20/05/2023",
+      "ore": "Sabato 22:00",
+      "subscription": "https://shorturl.at/sxQ39",
+      "required": "tesseramento",
+      "ingresso": "3 €",
+      "bio": "Oggi alle ore 22:00 ha inizio il torneo di Bang! - Messina Far West, preparate le vostre rivoltelle!"
     },
     {
       "id": "6",
-      "displayName6": "WhiteRose",
-      "score6": "180"
+      "title": "TeamFight Tactics (TFT) Custom Games",
+      "img": "https://i0.wp.com/thegamehaus.com/wp-content/uploads/2021/09/TFT-Set-6.jpg?fit=771%2C465&ssl=1",
+      "date": "21/05/2023",
+      "ore": "Domenica 21:00",
+      "subscription": "https://shorturl.at/ryT18",
+      "required": "tesseramento",
+      "ingresso": "3 €",
+      "bio": "Ciao appassionati di Team Fight Tactics! 🎮🔥 Oggi alle 21:00 vi aspetto per una serata di custom games su TFT, il gioco che mette alla prova le vostre abilità tattiche e strategiche! 💥 Preparatevi a sfidare altri giocatori, dimostrando la vostra abilità e creatività nella costruzione del team vincente! Il costo di partecipazione è solo di 3 euro e l'emozione è garantita fino alla fine della serata! 😆"
+    }
+  ],
+  "hearthstoneladder": [
+    {
+      "id": "1",
+      "displayName": "Scipi",
+      "score": "280🥇"
+    },
+    {
+      "id": "2",
+      "displayName": "Gaab",
+      "score": "250 🥈"
+    },
+    {
+      "id": "3",
+      "displayName": "WhiteHell",
+      "score": "210 🥉"
+    },
+    {
+      "id": "4",
+      "displayName": "Seizan",
+      "score": "190"
+    },
+    {
+      "id": "5",
+      "displayName": "Holly",
+      "score": "190"
+    },
+    {
+      "id": "6",
+      "displayName": "WhiteRose",
+      "score": "180"
     },
     {
       "id": "7",
-      "displayName7": "Galandar",
-      "score7": "170"
+      "displayName": "Galandar",
+      "score": "170"
     },
     {
       "id": "8",
-      "displayName8": "Atan",
-      "score8": "170"
+      "displayName": "Atan",
+      "score": "170"
     },
     {
       "id": "9",
-      "displayName9": "Acquamarina",
-      "score9": "150"
+      "displayName": "Acquamarina",
+      "score": "150"
     },
     {
       "id": "10",
-      "displayName10": "Femisi",
-      "score10": "150"
+      "displayName": "Femisi",
+      "score": "150"
     },
     {
       "id": "11",
-      "displayName11": "Susbi",
-      "score11": "100"
+      "displayName": "Susbi",
+      "score": "100"
     },
     {
       "id": "12",
-      "displayName12": "Noppy",
-      "score12": "100"
+      "displayName": "Noppy",
+      "score": "100"
     },
     {
       "id": "13",
-      "displayName13": "Artiom",
-      "score13": "80"
+      "displayName": "Artiom",
+      "score": "80"
     },
     {
       "id": "14",
-      "displayName14": "Spina",
-      "score14": "60"
+      "displayName": "Spina",
+      "score": "60"
     }
   ],
-
+  "tftladder": [
+    {
+      "id": "1",
+      "displayName": "Susbi",
+      "score": "345🥇"
+    },
+    {
+      "id": "2",
+      "displayName": "Gaab",
+      "score": "250 🥈"
+    },
+    {
+      "id": "3",
+      "displayName": "Dindo",
+      "score": "220 🥉"
+    },
+    {
+      "id": "4",
+      "displayName": "AndreaFF15",
+      "score": "185"
+    },
+    {
+      "id": "5",
+      "displayName": "Roxas",
+      "score": "155"
+    },
+    {
+      "id": "6",
+      "displayName": "Simone",
+      "score": "140"
+    },
+    {
+      "id": "7",
+      "displayName": "Savi_dolo",
+      "score": "135"
+    },
+    {
+      "id": "8",
+      "displayName": "Artiom",
+      "score": "90"
+    }
+  ],
   "comments": [
     {
       "id": 1,
@@ -199,10 +244,24 @@
       "postId": 1
     }
   ],
-  "account": {
-    "username": "Gasbro",
-    "email": "gasbroider@live.it",
-    "password": "Cicciogamer89",
-    "id": "admin"
-  }
+  "user": [
+    {
+      "username": "fgfgafgds",
+      "email": "sgfadg@cocco.it",
+      "password": "fdafasfdsad",
+      "id": 1
+    },
+    {
+      "username": "Gasbro",
+      "email": "gasbroider@live.it",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "username": "GasbroNinja",
+      "email": "gasbroider@gmail.it",
+      "password": "1234",
+      "id": 3
+    }
+  ]
 }
