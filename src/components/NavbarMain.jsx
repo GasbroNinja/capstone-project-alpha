@@ -8,12 +8,15 @@ import { Link } from 'react-router-dom';
 
 const NavbarMain = ({ ...props }) => {
 
+  // useSelector dal reducer
 
 
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const toggleShow = () => setShow((s) => !s);
+
+  let userlogged = sessionStorage.getItem("username");
 
   return (
     <>
@@ -92,14 +95,20 @@ const NavbarMain = ({ ...props }) => {
       </Container>
 
       <div className="d-flex justify-content-between">
-        <Link to={"/login"} className="bg-dark rounded-2">
-          <Button
-            variant='dark'
-            className="btnNavOffcanv text-uppercase fs-4"
-          >
-            Accedi
-          </Button>
-        </Link>
+        {userlogged ? (
+          <Link to={"/login"} className="bg-dark rounded-2 text-decoration-none">
+            <h2 className="btnNavOffcanv text-danger d-flex align-items-center fs-3 py-0 px-3 my-2">{userlogged}</h2>
+          </Link>
+        ) : (
+          <Link to={"/login"} className="bg-dark rounded-2">
+            <Button
+              variant="dark"
+              className="btnNavOffcanv text-uppercase fs-4"
+            >
+              Accedi
+            </Button>
+          </Link>
+        )}
       </div>
     </>
   );

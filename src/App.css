@@ -72,6 +72,16 @@ body {
     
 }
 
+.homeBaseAuto {
+    height: auto;
+    background-image: url("../src/assets/images/bg-definitivo-red.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-snap-align: start;
+
+}
+
 @media screen and (max-height: 750px) {
     .backGroundNeon {
             height: 100%;
@@ -98,6 +108,35 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    }
+    .welcomePage {
+        font-size: 40px;
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        background-color: rgb(85, 0, 20);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .welcomePage:hover {
+        font-size: 40px;
+        width: 270px;
+        height: 200px;
+        background-size: cover;
+        background-color: rgb(85, 0, 20);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .backgroundText:hover {
+        font-size: 95px;
+        letter-spacing: 13px;
+        text-shadow: 1px 5px 50px rgb(120, 74, 74);
+        transition: 2s;
 
     }
 }
@@ -140,6 +179,8 @@ body {
     transition: 2.5s;
 
 }
+
+
 
 @keyframes bg-animation {
     0%{background-position: 0% 0%;}

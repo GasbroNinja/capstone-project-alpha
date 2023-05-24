@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <Container fluid className=" text-center text-md-left mt-5 pt-5">
+    <Container fluid className=" text-center text-md-left mt-5 pt-5 px-5">
       <div>
         <Row className="d-lg-flex flex-xl-row  align-items-center justify-content-center flex-column">
           <Col md={6} className="mt-md-0 mt-3 pb-3">
