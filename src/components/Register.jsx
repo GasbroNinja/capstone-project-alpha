@@ -19,36 +19,60 @@ export default function Register() {
 
 
     const showToastMessage = () => {
-        toast.success("Registered successfully", {
+        toast.success("Registered successfully! Please Log-in again!", {
         position: toast.POSITION.TOP_CENTER,
         });
     };
 
-    const showToastMessageError = (error) => {
-        toast.error(`Failed : ${error.message}  `, {
-          position: toast.POSITION.TOP_CENTER,
-        });
+    const showToastMessageError = () => {
+      toast.error("Failed Registration", {
+        position: toast.POSITION.TOP_CENTER,
+      });
     };
 
+    const IsValidate = () => {
+      let isproceed = true;
+      let errormessage = "Please enter the values correctly:"
+      if(username.length <= 2){
+        isproceed = false;
+        errormessage += "Username";
+      }
+      if (email.length <= 6) {
+        isproceed = false;
+        errormessage += "E-mail";
+      }
+      if (password.length <= 2) {
+        isproceed = false;
+        errormessage += "Password";
+      }
+      if(!isproceed){
+        toast.warning(errormessage,{
+          position: toast.POSITION.TOP_CENTER,
+        })
+      }
+      return isproceed
+    }
+
     function validateForm() {
-      return username.length > 0 && email.length > 0 && password.length > 0;
+      return username.length > 1 && email.length > 1 && password.length > 1
     }
 
     function handleSubmit(event) {
     event.preventDefault();
     let regobj = { username, email, password};
-    console.log(regobj)
-
+    //console.log(regobj)
+      if(IsValidate()) {
         fetch("http://localhost:3001/user",{
             method: "POST",
             headers:{'content-type':'application/json'},
             body:JSON.stringify(regobj)
         }).then((resp)=>{
             showToastMessage();
-            // navigate("/login")
+            navigate('/login')
         }).catch((error)=>{
             showToastMessageError(error.message)
         });
+      };
     }
 
   return (
@@ -115,7 +139,6 @@ export default function Register() {
                   type="submit"
                   variant="danger"
                   disabled={!validateForm()}
-                  onClick={showToastMessage}
                 >
                   Sign up
                 </Button>
