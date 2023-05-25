@@ -344,7 +344,7 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    background-image: url("../src/assets/images/bg-redshift-editable.png");
+    background-image: url("../src/assets/images/sfondocard-white-orange.png");
     background-size: 220%;
     animation: bg-animation 7s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
     text-shadow: 1px 5px 90px rgb(199, 199, 199);
@@ -387,7 +387,7 @@ body {
             background-clip: text;
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
-            background-image: url("../src/assets/images/bg-redshift-editable.png");
+            background-image: url("../src/assets/images/sfondocard-white-orange.png");
             background-size: 220%;
             animation: bg-animation 7s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
             text-shadow: 1px 5px 90px rgb(199, 199, 199);
@@ -433,7 +433,7 @@ body {
             background-clip: text;
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
-            background-image: url("../src/assets/images/bg-redshift-editable.png");
+            background-image: url("../src/assets/images/sfondocard-white-orange.png");
             background-size: 220%;
             animation: bg-animation 7s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
             text-shadow: 1px 5px 90px rgb(199, 199, 199);

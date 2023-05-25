@@ -49,7 +49,7 @@ const LandingPage = () => {
                             Coppa Delle Casate
                           </Card.Title>
                         </Col>
-                        <Col xs={12} sm={6} md={6} lg={5} xl={6}>
+                        <Col xs={12} sm={6} md={6} lg={5} xl={6} className='bg-dark p-2 rounded-3'>
                           <Card.Text className="textCardBio fs-6 text-light fw-semibold text-center pb-2">
                             Nuovo evento tema Harry Potter, vieni anche tu
                             giorno 21 per partecipare ad una giornata
