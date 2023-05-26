@@ -26,8 +26,7 @@ export default function Login() {
     const ProceedLogin = (e) => {
       e.preventDefault();
       if (validate()) {
-        ///implentation
-        console.log('proceed');
+        //console.log('proceed');
         fetch(
           "http://localhost:3001/user?username=" + username + "&password=" + password)
           .then((res) => {
