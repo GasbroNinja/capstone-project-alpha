@@ -1,3 +1,5 @@
+/*
+      ////--------- FUTURE IMPLEMENTATION ON THIS PROJECT ---------////
 
 import { Types } from '../actions/index.js';
 
@@ -48,4 +50,4 @@ const reducer = (state = initialState, action) => {
   }
 }
 
-export default reducer;
+export default reducer;*/

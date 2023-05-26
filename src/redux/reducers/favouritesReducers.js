@@ -1,3 +1,6 @@
+/*
+  ////--------- FUTURE IMPLEMENTATION ON THIS PROJECT ---------////
+
 import { ADD_TO_FAVOURITES, REMOVE_FROM_FAVOURITES } from "../actions";
 
 const initialState = {
@@ -23,4 +26,4 @@ const favouritesReducer = (state = initialState, action) => {
   }
 };
 
-export default favouritesReducer;
+export default favouritesReducer;*/

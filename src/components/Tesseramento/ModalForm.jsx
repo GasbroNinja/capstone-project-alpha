@@ -49,7 +49,7 @@ const ModalForm = () => {
           <div className="welcomePage backgroundText py-2">
             <div className="d-inline-flex flex-column justify-content-center">
               <h2 className="d-flex fst-italic d-flex justify-content-center">
-                Tessarati !
+                Tesserati !
               </h2>
             </div>
           </div>

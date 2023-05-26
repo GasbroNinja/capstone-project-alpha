@@ -15,7 +15,7 @@ const ThirdSlideHome = () => {
 
       const dispatch = useDispatch();
       const eventsHome = useSelector((state) => state.eventi.content);
-      console.log(eventsHome);
+      //console.log(eventsHome);
 
       useEffect(() => {
         dispatch(getEventsHomeAction());

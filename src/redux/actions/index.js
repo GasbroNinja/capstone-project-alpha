@@ -1,11 +1,17 @@
+/*
+
+    ////--------- FUTURE IMPLEMENTATION ON THIS PROJECT ---------////
+
 export const ADD_TO_FAVOURITES = "ADD_TO_FAVOURITES";
 export const REMOVE_FROM_FAVOURITES = "REMOVE_FROM_FAVOURITES";
-/*export const ADD_ALBUM = "ADD_ALBUM";
-export const IS_PLAY = "IS_PLAY";*/
+export const ADD_ALBUM = "ADD_ALBUM";
+export const IS_PLAY = "IS_PLAY";
 
 export const addToFavouritesAction = events => ({ type: ADD_TO_FAVOURITES, payload: events });
 export const removeFromFavouritesAction = events => ({ type: REMOVE_FROM_FAVOURITES, payload: events });
 /*export const isPlayAction = song => ({ type: IS_PLAY, payload: song });
+
+//EXAMPLES
 
 export const getAlbumsAction = query => {
   return async dispatch => {
@@ -24,8 +30,8 @@ export const getAlbumsAction = query => {
   };
 };
 
-*/
 
+//ADVANCED LOGIN SYSTEM
 
 export const Types = {
   LOGIN: 'LOGIN',
@@ -47,7 +53,7 @@ export const ActionCreators = {
 
   login: (user) => ({ type: Types.LOGIN, payload: { user } })
 }
-
+*/
 export const GET_CARDS = "GET_CARDS";
 
 export const getPostsHomeAction = () => {

@@ -2,7 +2,7 @@ import { configureStore, combineReducers} from "@reduxjs/toolkit";
 
 import profile from '../reducers/loginReducer';
 import cardsStorage from "../reducers/cardHomeReducer";
-import favouritesReducer from "../reducers/favouritesReducers";
+//import favouritesReducer from "../reducers/favouritesReducers";
 import eventsStorage from "../reducers/eventsHomeReducer";
 import LadderHSStorage from "../reducers/communityLadderReducer";
 import LadderTFTStorage from "../reducers/communityLadderTFTReducer";
@@ -13,7 +13,7 @@ const rootReducer = combineReducers({
   eventi : eventsStorage,
   ladderHS : LadderHSStorage,
   ladderTFT : LadderTFTStorage,
-  favourites: favouritesReducer,
+  //favourites: favouritesReducer,
   user: profile
 });
 

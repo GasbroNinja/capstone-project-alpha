@@ -15,7 +15,7 @@ const FirstSlideHome = () => {
 
       const dispatch = useDispatch();
       const cardsHome = useSelector((state) => state.cards.content);
-      console.log(cardsHome);
+      //console.log(cardsHome);
 
       useEffect(() => {
         dispatch(getPostsHomeAction());
