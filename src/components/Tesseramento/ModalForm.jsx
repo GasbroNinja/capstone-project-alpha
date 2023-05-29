@@ -3,6 +3,7 @@ import { Button, Container, Form } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { Animator, MoveOut, batch } from 'react-scroll-motion';
 import "../Tesseramento/tesseramento.css"
+import { toast } from 'react-toastify';
 
 const ModalForm = () => {
 
@@ -25,6 +26,17 @@ const ModalForm = () => {
 
     const [email, setEmail] = useState("");
 
+    const showToastMessage = () => {
+      toast.success("Registered successfully! Please Log-in again!", {
+        position: toast.POSITION.TOP_CENTER,
+      });
+    };
+
+    const showToastMessageError = () => {
+      toast.error("Failed Registration", {
+        position: toast.POSITION.TOP_CENTER,
+      });
+    };
 
     function validateForm() {
       return (
@@ -39,8 +51,71 @@ const ModalForm = () => {
       );
     }
 
+    const IsValidate = () => {
+      let isproceed = true;
+      let errormessage = "Please enter the values correctly:";
+      if (name.length <= 2) {
+        isproceed = false;
+        errormessage += "Name";
+      }      
+      if (surname.length <= 2) {
+        isproceed = false;
+        errormessage += "Surname";
+      }
+      if (username.length <= 2) {
+        isproceed = false;
+        errormessage += "Username";
+      }
+      if (road.length <= 2) {
+        isproceed = false;
+        errormessage += "Road";
+      }
+      if (email.length <= 6) {
+        isproceed = false;
+        errormessage += "E-mail";
+      }
+      if (fiscalCode.length <= 16) {
+        isproceed = false;
+        errormessage += "Fiscal Code";
+      }
+      if (dateBorn.length <= 6) {
+        isproceed = false;
+        errormessage += "Fiscal Code";
+      }
+      if (!isproceed) {
+        toast.warning(errormessage, {
+          position: toast.POSITION.TOP_CENTER,
+        });
+      }
+      return isproceed;
+    };
+
+
     function handleSubmit(event) {
       event.preventDefault();
+      let tesseramentObj = {
+        name,
+        surname,
+        username,
+        road,
+        fiscalCode,
+        dateBorn,
+        email,
+      };
+      if (IsValidate()) {
+        fetch("http://localhost:3001/tesseramento", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(tesseramentObj),
+        })
+          .then((resp) => {
+            showToastMessage();
+            navigate("/home");
+          })
+          .catch((error) => {
+            showToastMessageError(error.message);
+          });
+      }
     }
 
   return (
@@ -112,7 +187,7 @@ const ModalForm = () => {
               />
             </Form.Group>
 
-            <Form.Group size="lg" controlId="username">
+            <Form.Group size="lg" controlId="road">
               <Form.Label className="FooterText bgFooterText fs-3 text-uppercase py-2">
                 Via Residenza / Resident in
               </Form.Label>
@@ -173,7 +248,6 @@ const ModalForm = () => {
                 type="submit"
                 variant="danger"
                 disabled={!validateForm()}
-                onClick={() => navigate("/home")}
               >
                 Register
               </Button>
