@@ -328,7 +328,11 @@ section {
     
 }
 
-
+.titleEventCard{
+    color:rgb(255, 208, 208);
+    background-color: rgba(43, 43, 43, 0.527);
+    text-shadow: 3px 3px 24px rgba(255, 91, 91, 0.714);
+}
 
 .resizeBox{
     width: auto;

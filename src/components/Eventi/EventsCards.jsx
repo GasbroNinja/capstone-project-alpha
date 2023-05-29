@@ -27,7 +27,7 @@ const EventsCards = ({ eventsHome, props }) => {
               alt="Redshift Sala"
               className=" fixImgCardHome1"
             />
-            <Row className="d-xs-flex flex-column">
+            <Row className="d-xs-flex flex-column ">
               <Card.ImgOverlay className="contentCard2 d-flex flex-column align-items-center justify-content-end border border-5 rounded-5 border-danger">
                 <div className="">
                   <Col
@@ -38,7 +38,7 @@ const EventsCards = ({ eventsHome, props }) => {
                     xl={4}
                     className="text-center w-100"
                   >
-                    <Card.Title className="contentCard text-primary rounded-pill px-2 text-center fw-bold fs-1 pb-1">
+                    <Card.Title className="contentCard titleEventCard rounded-pill px-2 text-center fw-bold fs-1 pb-1">
                       {eventsHome.title}
                     </Card.Title>
                   </Col>
@@ -50,8 +50,8 @@ const EventsCards = ({ eventsHome, props }) => {
                     xl={6}
                     className="text-center w-100"
                   >
-                    <Card.Text className=" text-light fw-semibold text-center pb-2">
-                      <span className="btnNavOffcanv fs-5">
+                    <Card.Text className="text-light fw-semibold text-center pb-2">
+                      <span className="btnNavOffcanv  fs-5">
                         {eventsHome.date}
                         <br />
                         {eventsHome.ore}
@@ -67,7 +67,7 @@ const EventsCards = ({ eventsHome, props }) => {
                     className="text-center w-100"
                   >
                     <Card.Text className="d-flex align-items-center justify-content-center flex-column  fw-semibold text-center pt-3">
-                      {}
+                      {/*FUTURE IMPLEMENTATION: SUBSCRIBTION ON DB FROM BACKEND*/}
                       <a
                         href={eventsHome.subscription}
                         className=" text-decoration-none bg-secondary fs-5 rounded-2"

@@ -110,7 +110,7 @@ const ModalForm = () => {
         })
           .then((resp) => {
             showToastMessage();
-            navigate("/home");
+            navigate("/");
           })
           .catch((error) => {
             showToastMessageError(error.message);

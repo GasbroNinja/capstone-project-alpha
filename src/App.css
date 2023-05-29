@@ -303,6 +303,16 @@ body {
     padding: auto;
 }
 
+.bgTextCardLand{
+    background-color: rgba(33, 33, 33, 0.528);
+    box-shadow: 3px 3px 24px rgba(254, 60, 26, 0.733);
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 
 @media screen and (max-width: 576px) {
