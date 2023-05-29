@@ -43,4 +43,6 @@ TFT: http://localhost:3001/tftladder
 
 - Staff : http://localhost:3001/staff
 
-- Log-in: "http://localhost:3001/user?username=" + username + "&password=" + password
+- Register : http://localhost:3001/user
+
+- Log-in: "http://localhost:3001/user?username='username'&password='password'"
