@@ -27,3 +27,20 @@ L'app è stata creata con le seguenti tecnologie:
 - **React-scroll-motion** : https://github.com/1000ship/react-scroll-motion/blob/master/_readme/docs.md
 - **React-Toastify** : https://www.npmjs.com/package/react-toastify
 - **Universal-Cookie** : https://www.npmjs.com/package/universal-cookie
+
+## API Reference JSON-SERVER
+
+https://github.com/typicode/json-server
+
+Utilizzate una serie di GET e POST
+
+- Register & Login System : POST
+- CardsHome : GET http://localhost:3001/cardshome
+- Events : GET http://localhost:3001/eventi/{id}
+- Ladders TFT/HearthStone :
+HS: http://localhost:3001/hearthstoneladder
+TFT: http://localhost:3001/tftladder
+
+- Staff : http://localhost:3001/staff
+
+- Log-in: "http://localhost:3001/user?username=" + username + "&password=" + password
