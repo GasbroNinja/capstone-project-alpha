@@ -41,9 +41,9 @@ const EventDetail = () => {
   return (
     <>
       <ToastContainer theme="colored"></ToastContainer>
-      <Container fluid className="homeBase4 p-0">
+      <Container fluid className="homeBase2 p-0">
         <Container fluid className="backGroundNeon2 p-0 overflow-y-hidden">
-          <Container fluid className="homeBase2 p-0">
+          <Container fluid className="homeBase4 p-0">
             <Container
               fluid
               className=" d-flex align-items-center justify-content-start p-3"
@@ -53,9 +53,7 @@ const EventDetail = () => {
 
             <Animator animation={MoveIn(0, -500)}>
               <Container className="d-flex flex-column justify-content-center align-items-center ">
-                <div
-                  className="FooterText bgFooterText py-0"
-                >
+                <div className="FooterText bgFooterText py-0">
                   <div className="d-inline-flex flex-column justify-content-center my-2">
                     <h2 className="d-flex fst-italic d-flex justify-content-center fs-5">
                       EVENTO: <br />

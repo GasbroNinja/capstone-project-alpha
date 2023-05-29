@@ -10,7 +10,7 @@ const FirstSlideCommunity = () => {
 
     const dispatch = useDispatch();
     const ladderHSCommunity = useSelector((state) => state.ladderHS.content);
-    console.log(ladderHSCommunity);
+    //console.log(ladderHSCommunity);
 
     useEffect(() => {
     dispatch(getLadderHSAction());
@@ -22,7 +22,7 @@ const FirstSlideCommunity = () => {
     const ladderTFTCommunity = useSelector(
       (state) => state.ladderTFT.content
     );
-    console.log(ladderTFTCommunity);
+    //console.log(ladderTFTCommunity);
 
     useEffect(() => {
       dispatch2(getLadderTFTAction());

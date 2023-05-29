@@ -49,6 +49,15 @@ section {
     overflow-x: hidden;
 }
 
+.homeBase4 {
+    height: 100vh;
+    background-image: url("../../assets/images/bg-definitivo-red.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
 .backGroundNeon2 {
     height: 100%;
     background-image: url("../../assets/images/bg-definitivo-red.png");
@@ -174,7 +183,7 @@ section {
     }
 
     .fixImgCardHome1 {
-        width: 700px;
+        width: 695px;
         position: relative;
         height: 500px;
         object-fit: cover;
