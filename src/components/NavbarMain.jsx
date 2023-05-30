@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Container, Offcanvas } from 'react-bootstrap';
-import { ImArrowDown } from "react-icons/im";
+import { TfiMenu } from "react-icons/tfi";
 import logoredshift from "../assets/images/LogoRedShift2023.png";
 import "../App.css"
 import { Link } from 'react-router-dom';
@@ -29,8 +29,8 @@ const NavbarMain = ({ ...props }) => {
           onClick={toggleShow}
           className=" me-sm-2 d-flex align-items-center justify-content-top px-2 px-sm-3"
         >
-          <h2 className="btnNavOffcanv text-danger fs-2 pe-3 pt-1">RED</h2>
-          <ImArrowDown className="arrowbtnNavOffcanv fs-2"></ImArrowDown>
+          <h2 className="btnNavOffcanv text-danger fs-2 pe-2 pt-1 m-0">RED</h2>
+          <TfiMenu className="arrowbtnNavOffcanv fs-2"></TfiMenu>
         </Button>
         <Offcanvas
           className="offcanvasStyle1 overflow-x-hidden"
@@ -96,8 +96,13 @@ const NavbarMain = ({ ...props }) => {
 
       <div className="d-flex justify-content-between">
         {userlogged ? (
-          <Link to={"/login"} className="bg-dark rounded-2 text-decoration-none">
-            <h2 className="btnNavOffcanv text-danger d-flex align-items-center fs-3 py-0 px-3 my-2">{userlogged}</h2>
+          <Link
+            to={"/login"}
+            className="bg-dark rounded-2 text-decoration-none"
+          >
+            <h2 className="btnNavOffcanv text-danger d-flex align-items-center fs-3 py-0 px-3 my-2">
+              {userlogged}
+            </h2>
           </Link>
         ) : (
           <Link to={"/login"} className="bg-dark rounded-2">

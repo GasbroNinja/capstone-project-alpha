@@ -11,7 +11,7 @@ const Footer = () => {
     <Container fluid className=" text-center text-md-left mt-5 pt-5 px-5">
       <div>
         <Row className="d-lg-flex flex-xl-row  align-items-center justify-content-center flex-column">
-          <Col md={6} className="mt-md-0 mt-3 pb-3">
+          <Col md={6} className="mt-md-0 mt-3 pb-3 pe-xl-5">
             <h5 className="text-uppercase FooterText bgFooterText text-start m-0 p-0 fs-6">
               REDSHIFT GAMING ©
             </h5>

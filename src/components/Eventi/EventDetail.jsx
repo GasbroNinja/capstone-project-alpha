@@ -87,7 +87,7 @@ const EventDetail = () => {
                       xl={4}
                       className="text-center w-100"
                     >
-                      <Card.Title className="text-danger rounded-pill px-2 text-center fw-bold fs-1 pb-2">
+                      <Card.Title className="TitleEventCard2 rounded-pill px-2 text-center fw-bold fs-1 pb-2">
                         {eventDet.title}
                       </Card.Title>
                     </Col>

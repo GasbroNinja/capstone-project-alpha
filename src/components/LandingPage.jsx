@@ -46,8 +46,8 @@ const LandingPage = () => {
                       <Card.ImgOverlay className="p-0 cardImgLandingPage d-flex  flex-column align-items-center justify-content-center">
                         <div className="bgTextCardLand">
                           <Col xs={12} sm={3} md={3} lg={4} xl={4}>
-                            <Card.Title className="textCardLandingPage text-center fs-2 pb-1">
-                              Coppa Delle Casate
+                            <Card.Title className="textCardBio text-center fs-2 pb-1">
+                              Coppa Delle Case
                             </Card.Title>
                           </Col>
                           <Col
@@ -58,7 +58,7 @@ const LandingPage = () => {
                             xl={6}
                             className="p-2 rounded-3"
                           >
-                            <Card.Text className="textCardBio fs-6 text-light fw-semibold text-center pb-2">
+                            <Card.Text className="fs-5 text-light fw-semibold text-center pb-2">
                               Nuovo evento tema Harry Potter, vieni anche tu
                               giorno 21 per partecipare ad una giornata
                               all'insegna della saga di maghi più apprezzata di
@@ -73,7 +73,7 @@ const LandingPage = () => {
                                 sala
                                 <br />
                               </strong>
-                              <small className="textCardLandingPage fs-3 fw-bold text-center fst-italic w-100">
+                              <small className="textCardBio fs-2 fw-bold text-center fst-italic w-100">
                                 21:00
                               </small>
                             </Card.Text>

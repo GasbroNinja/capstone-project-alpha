@@ -343,3 +343,9 @@ section {
         width: 250px;
     }
 }
+
+.TitleEventCard2{
+    color: rgb(254, 181, 181);
+    text-shadow: 3px 3px 12px rgb(255, 129, 127);
+    letter-spacing: 2.5px;
+}
