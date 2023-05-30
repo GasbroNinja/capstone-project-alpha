@@ -13,6 +13,13 @@ Danno il massimo per poter portare una nuova esperienza al cliente sia dal punto
 
 Questa WebApp ha come scopo di sponsorizzare il locale a Messina e come fine di creare un ambiente più social ma in primis è un sito "vetrina" momentaneamente.
 
+# Before Start! 🏳
+
+Come effettuare il launch del sito: dopo aver installato i pacchetti **node_modules**, aprire due terminali:
+
+- nel primo effettuerete il launch con lo script "npm start",
+- nel secondo bisogna attivare JSON-SERVER prima di effettuare il launch con il seguente script: "json-server -p 3001 --watch db.json"
+
 # 👩‍💻Main Tecnologies:
 
 L'app è stata creata con le seguenti tecnologie:
