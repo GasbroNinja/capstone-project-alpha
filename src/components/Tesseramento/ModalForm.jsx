@@ -27,7 +27,7 @@ const ModalForm = () => {
     const [email, setEmail] = useState("");
 
     const showToastMessage = () => {
-      toast.success("Registered successfully! Please Log-in again!", {
+      toast.success("Subscribed successfully! to complete registration go to the REDSHIFT MESSINA", {
         position: toast.POSITION.TOP_CENTER,
       });
     };
