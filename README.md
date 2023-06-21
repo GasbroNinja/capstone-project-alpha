@@ -53,3 +53,8 @@ TFT: http://localhost:3001/tftladder
 - Register : http://localhost:3001/user
 
 - Log-in: "http://localhost:3001/user?username='username'&password='password'"
+
+
+# Contatti personali 👤:
+
+Linked-in ➡ https://www.linkedin.com/in/gabriele-cuscin%C3%A0/
