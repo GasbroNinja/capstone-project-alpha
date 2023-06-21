@@ -412,6 +412,18 @@
       "email": "gadfa@lfdf.it",
       "password": "123",
       "id": 28
+    },
+    {
+      "username": "Gasbro1",
+      "email": "gasf@iutt.it",
+      "password": "123",
+      "id": 29
+    },
+    {
+      "username": "Gab123",
+      "email": "gab123@outlook.it",
+      "password": "123",
+      "id": 30
     }
   ],
   "tesseramento": [

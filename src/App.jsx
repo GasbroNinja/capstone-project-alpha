@@ -15,6 +15,7 @@ import Cookies from "universal-cookie";
 import jwt from "jwt-decode";
 import { useState } from "react";
 import { Button } from "react-bootstrap";
+import { ToastContainer } from "react-toastify";
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
 
   return (
     <>
+      <ToastContainer theme="colored"></ToastContainer>
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<Login />} />
